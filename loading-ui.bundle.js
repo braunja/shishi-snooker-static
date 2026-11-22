@@ -2101,7 +2101,9 @@ img.coin-icon{background-image:url(/assets/icons/clear-illustrated-atlas.png)!im
           b.textContent = "\u52A0\u8F7D\u5931\u8D25 \xB7 \u70B9\u51FB\u91CD\u8BD5";
           b.onclick = () => location.reload();
           layer.screen.querySelector(".room-load-track").replaceWith(b);
-          layer.screen.querySelector(".room-load-status").textContent = "\u52A0\u8F7D\u5931\u8D25\uFF0C\u8BF7\u91CD\u8BD5\u3002";
+          const status=layer.screen.querySelector(".room-load-status");
+          status.style.maxWidth="88vw";status.style.overflowWrap="anywhere";
+          status.textContent = error.textContent || "加载失败，请重试。";
           return;
         }
         if (failed) return;

@@ -129,10 +129,14 @@ export function installResourceFetch() {
       const cdn = globalThis.SnookerAssetCDN;
       const local = '/engine/asset-versions.json';
       if(cdn?.enabled) try {
-        const response=await nativeFetch(cdn.root+'engine/asset-versions.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(5000)});
-        if(response.ok)return await response.json();
+        const roots=[cdn.root,cdn.root.replace(/\/\/(cdn|fastly)\./,(_,host)=>'//'+(host==='cdn'?'fastly':'cdn')+'.')];
+        return await Promise.any([...new Set(roots)].map(async root=>{
+          const response=await nativeFetch(root+'engine/asset-versions.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(15000)});
+          if(!response.ok)throw Error('Asset manifest unavailable');
+          return response.json();
+        }));
       } catch {}
-      return nativeFetch(local,{cache:'no-store',signal:AbortSignal.timeout(5000)}).then(r=>r.ok?r.json():null).catch(()=>null);
+      return nativeFetch(local,{cache:'no-store',signal:AbortSignal.timeout(15000)}).then(r=>r.ok?r.json():null).catch(()=>null);
     };
     const versions=loadVersions();
     installedFetch = createResourceFetch(nativeFetch, () => document.baseURI, globalThis.caches, versions);
@@ -148,7 +152,11 @@ export function installImageRetries(ImageLoader) {
     let attempts = 0;
     const retry = error => {
       if (++attempts < 3) { globalThis.fetch.fallbackImage?.(url); original.call(this, url, onLoad, onProgress, retry); }
-      else onError?.(error);
+      else {
+        let path;
+        try { path=new URL(url,document.baseURI).pathname; } catch { path='贴图'; }
+        onError?.(new Error('贴图下载失败：'+path,{cause:error}));
+      }
     };
     return original.call(this, url, onLoad, onProgress, retry);
   };

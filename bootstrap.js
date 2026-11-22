@@ -10,7 +10,10 @@ window.reportThreeLoadingError = error => {
     message.setAttribute('role', 'alert');
     host.append(message);
   }
-  message.textContent = `加载失败：${error?.message || String(error)}`;
+  const detail=String(error?.message || error).replace(/https?:\/\/[^\s"'<>]+/g,value=>{
+    try { const url=new URL(value);return url.origin+url.pathname; } catch { return '资源'; }
+  });
+  message.textContent = `加载失败：${detail}`;
 };
 window.addEventListener('error', event => { if (event.message) window.reportThreeLoadingError(event); });
 window.addEventListener('unhandledrejection', event => window.reportThreeLoadingError(event.reason));
@@ -20,7 +23,7 @@ function staticURL(src) {
 }
 async function chooseCDN() {
   try {
-    const {root,sourceFingerprint} = await fetch('/asset-cdn-runtime.json',{cache:'no-store',signal:AbortSignal.timeout(3500)}).then(r=>r.json());
+    const {root,sourceFingerprint} = window.SnookerAssetCDNConfig || await fetch('/asset-cdn-runtime.json',{cache:'no-store',signal:AbortSignal.timeout(8000)}).then(r=>r.json());
     const trusted = /^https:\/\/(?:cdn|fastly)\.jsdelivr\.net\/gh\/braunja\/shishi-snooker-static@[a-f0-9]{40}\/$/.test(root) ||
       location.hostname === '127.0.0.1' && root === location.origin + '/__cdn/';
     if(!trusted)return;
@@ -28,7 +31,7 @@ async function chooseCDN() {
       ? [root,root.replace(/\/\/(cdn|fastly)\./,(_,host)=>'//'+(host==='cdn'?'fastly':'cdn')+'.')]
       : [root,location.origin+'/__cdn-fastly/'];
     window.SnookerAssetCDN=await Promise.any(alternatives.map(async candidate=>{
-      const response=await fetch(candidate+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(3500)});
+      const response=await fetch(candidate+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(8000)});
       if(!response.ok)throw Error('CDN not ready');
       const data=await response.json();if(data.sourceFingerprint!==sourceFingerprint)throw Error('CDN version mismatch');
       return {root:candidate,enabled:true,files:new Set(data.files)};
