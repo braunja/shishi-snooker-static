@@ -20,19 +20,19 @@ function staticURL(src) {
 }
 async function chooseCDN() {
   try {
-    const {root} = await fetch('/asset-cdn-runtime.json',{cache:'no-store',signal:AbortSignal.timeout(3500)}).then(r=>r.json());
+    const {root,sourceFingerprint} = await fetch('/asset-cdn-runtime.json',{cache:'no-store',signal:AbortSignal.timeout(3500)}).then(r=>r.json());
     const trusted = /^https:\/\/(?:cdn|fastly)\.jsdelivr\.net\/gh\/braunja\/shishi-snooker-static@[a-f0-9]{40}\/$/.test(root) ||
       location.hostname === '127.0.0.1' && root === location.origin + '/__cdn/';
     if(!trusted)return;
     const response=await fetch(root+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(3500)});
-    if(response.ok)window.SnookerAssetCDN={root,enabled:true};
+    if(response.ok && (await response.json()).sourceFingerprint === sourceFingerprint)window.SnookerAssetCDN={root,enabled:true};
   } catch {}
 }
 async function loadScript(src, fallback=false) {
   try { await new Promise((resolve, reject) => {
     const script = document.createElement('script');
     script.src = fallback ? src : staticURL(src);
-    if(script.src.startsWith('https://cdn.jsdelivr.net/')||script.src.startsWith('https://fastly.jsdelivr.net/'))script.crossOrigin='anonymous';
+    script.crossOrigin='anonymous';
     script.onload = resolve;
     script.onerror = () => reject(new Error(`无法加载 ${src}`));
     document.body.append(script);
