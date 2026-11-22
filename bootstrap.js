@@ -24,8 +24,15 @@ async function chooseCDN() {
     const trusted = /^https:\/\/(?:cdn|fastly)\.jsdelivr\.net\/gh\/braunja\/shishi-snooker-static@[a-f0-9]{40}\/$/.test(root) ||
       location.hostname === '127.0.0.1' && root === location.origin + '/__cdn/';
     if(!trusted)return;
-    const response=await fetch(root+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(3500)});
-    if(response.ok){const data=await response.json();if(data.sourceFingerprint===sourceFingerprint)window.SnookerAssetCDN={root,enabled:true,files:new Set(data.files)};}
+    const alternatives=root.startsWith('https:')
+      ? [root,root.replace(/\/\/(cdn|fastly)\./,(_,host)=>'//'+(host==='cdn'?'fastly':'cdn')+'.')]
+      : [root,location.origin+'/__cdn-fastly/'];
+    window.SnookerAssetCDN=await Promise.any(alternatives.map(async candidate=>{
+      const response=await fetch(candidate+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(3500)});
+      if(!response.ok)throw Error('CDN not ready');
+      const data=await response.json();if(data.sourceFingerprint!==sourceFingerprint)throw Error('CDN version mismatch');
+      return {root:candidate,enabled:true,files:new Set(data.files)};
+    }));
   } catch {}
 }
 async function loadScript(src, fallback=false) {

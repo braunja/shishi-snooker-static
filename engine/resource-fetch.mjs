@@ -12,14 +12,24 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
     return entry && /^[a-f0-9]{64}$/.test(entry.version) &&
       entry.url?.match(/^\/_game-assets\/([a-f0-9]{64})\.[a-z0-9.]+$/)?.[1] === entry.version ? entry : null;
   };
-  const localFallbacks = new Set();
+  const localFallbacks = new Set(), alternateImages = new Set();
+  const roots = () => {
+    const root=cdn()?.root;
+    if(!root)return [];
+    if(/^https:\/\/(cdn|fastly)\.jsdelivr\.net\/gh\/braunja\/shishi-snooker-static@[a-f0-9]{40}\/$/.test(root))
+      return [root,root.replace(/\/\/(cdn|fastly)\./,(_,host)=>'//'+(host==='cdn'?'fastly':'cdn')+'.')];
+    const base=new URL(baseURI());
+    if(base.hostname==='127.0.0.1' && [base.origin+'/__cdn/',base.origin+'/__cdn-fastly/'].includes(root))
+      return [root,base.origin+(root.endsWith('/__cdn/')?'/__cdn-fastly/':'/__cdn/')];
+    return [root];
+  };
   const canonicalURL = input => {
     const url = new URL(input, baseURI());
-    const root = cdn()?.root;
+    const root = roots().find(root=>url.href.startsWith(root));
     return root && url.href.startsWith(root) ? new URL('/' + url.href.slice(root.length), baseURI()) : url;
   };
   const transportURL = url => cdn()?.enabled && url.origin === new URL(baseURI()).origin && !localFallbacks.has(url.pathname) && (!cdn().files || cdn().files.has(url.pathname.slice(1)))
-    ? cdn().root + url.pathname.slice(1) + url.search : url.href;
+    ? (alternateImages.has(url.pathname) && roots()[1] || cdn().root) + url.pathname.slice(1) + url.search : url.href;
   const physicalURL = input => {
     const url = canonicalURL(input);
     const entry = url.origin === new URL(baseURI()).origin && versionEntry(url.pathname);
@@ -27,7 +37,7 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
   };
   const resolveURL = input => transportURL(physicalURL(input));
   const requestOptions = (target, options) => {
-    if (!cdn()?.root || !String(target).startsWith(cdn().root)) return {...options, priority};
+    if (!roots().some(root=>String(target).startsWith(root))) return {...options, priority};
     const headers = new Headers(options.headers);
     headers.delete('authorization');headers.delete('cookie');
     return {...options, headers, credentials:'omit', mode:'cors', referrerPolicy:'no-referrer', priority};
@@ -58,7 +68,7 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
           await response.body?.cancel();
           throw new Error("资源暂不可用，请重试。");
         }
-        if (!response.ok) return response;
+        if (!response.ok) { await response.body?.cancel();throw new Error('资源暂不可用，请重试。'); }
         const etag = response.headers.get("etag");
         if (!version && saved && saved.headers.get("etag") === etag && etag) {
           await response.body?.cancel().catch(() => {});
@@ -75,7 +85,8 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
         return result;
       } catch (error) {
         if (signal?.aborted || attempt === 2) throw error;
-        if (target !== cacheKey) target = cacheKey;
+        const alternate=cdn()?.enabled && roots()[1] && roots()[1]+new URL(cacheKey).pathname.slice(1)+new URL(cacheKey).search;
+        target=alternate && target!==alternate && target!==cacheKey ? alternate : cacheKey;
       }
     }
   };
@@ -94,9 +105,11 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
   fetchResource.isSnookerAssetFetch = true;
   fetchResource.fallbackImage = input => {
     const url=canonicalURL(input);
-    localFallbacks.add(physicalURL(url).pathname);
+    const paths=[physicalURL(url).pathname];
     const preview=versionEntry(url.pathname)?.preview;
-    if(preview)localFallbacks.add(new URL(preview,url).pathname);
+    if(preview)paths.push(new URL(preview,url).pathname);
+    const useLocal=!roots()[1] || paths.some(path=>alternateImages.has(path));
+    for(const path of paths)(useLocal?localFallbacks:alternateImages).add(path);
   };
   fetchResource.background = () => { priority = "low"; previewEnabled = false; };
   return fetchResource;
