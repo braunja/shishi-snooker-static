@@ -90,7 +90,8 @@ try {
   window.addEventListener('practice-settings-change', syncPreferences);
   await loadScript('/native-replay-icons.js');
   await loadScript('/practice-menu.js');
-  await import('./venue-branding.js');
+  try { await import(staticURL('/venue-branding.js')); }
+  catch(error) {if(!window.SnookerAssetCDN?.enabled)throw error;window.SnookerAssetCDN.enabled=false;await import('./venue-branding.js');}
   try { await import(staticURL('/engine/product-preview.bundle.js')); }
   catch(error) {
     if(!window.SnookerAssetCDN?.enabled)throw error;
