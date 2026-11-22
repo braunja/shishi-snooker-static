@@ -60,6 +60,11 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
     const cache = await assetCache;
     const saved = cache && await cache.match(cacheKey).catch(() => null);
     if (version && saved?.headers.get("x-snooker-asset-version") === version) return saved;
+    if (entry && typeof entry.inlineJSON === 'string') {
+      const result = new Response(entry.inlineJSON, {headers:{'content-type':'application/json', 'x-snooker-asset-version':version}});
+      if (cache) await cache.put(cacheKey,result.clone()).catch(() => {});
+      return result;
+    }
     let target = resolveURL(url);
     for (let attempt = 0; attempt < 3; attempt++) {
       try {
