@@ -76,7 +76,7 @@ try {
   window.SnookerProduct = {autoStart:true, user:{id:identity.id, nickname:identity.name}, cueAppearance:'black-through', ferruleEquipmentId:'4-basic'};
   await loadScript('/loading-ui.bundle.js');
   for (const src of ['/engine/game-config.js', '/engine/game-core.bundle.js', '/product-trial-ui.bundle.js', '/battle-config.js']) await loadScript(src);
-  const response = await fetch('/tuning-snapshot.json');
+  const response = await fetch(staticURL('/tuning-snapshot.json'));
   if (!response.ok) throw new Error('缺少本机规则参数');
   const tuning = await response.json();
   Object.assign(window.SnookerTrialTuning.snapshot, tuning);
