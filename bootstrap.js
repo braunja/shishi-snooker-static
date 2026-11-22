@@ -25,7 +25,7 @@ async function chooseCDN() {
       location.hostname === '127.0.0.1' && root === location.origin + '/__cdn/';
     if(!trusted)return;
     const response=await fetch(root+'ready.json',{credentials:'omit',mode:'cors',signal:AbortSignal.timeout(3500)});
-    if(response.ok && (await response.json()).sourceFingerprint === sourceFingerprint)window.SnookerAssetCDN={root,enabled:true};
+    if(response.ok){const data=await response.json();if(data.sourceFingerprint===sourceFingerprint)window.SnookerAssetCDN={root,enabled:true,files:new Set(data.files)};}
   } catch {}
 }
 async function loadScript(src, fallback=false) {

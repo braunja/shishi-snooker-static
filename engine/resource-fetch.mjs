@@ -18,7 +18,7 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
     const root = cdn()?.root;
     return root && url.href.startsWith(root) ? new URL('/' + url.href.slice(root.length), baseURI()) : url;
   };
-  const transportURL = url => cdn()?.enabled && url.origin === new URL(baseURI()).origin && !localFallbacks.has(url.pathname)
+  const transportURL = url => cdn()?.enabled && url.origin === new URL(baseURI()).origin && !localFallbacks.has(url.pathname) && (!cdn().files || cdn().files.has(url.pathname.slice(1)))
     ? cdn().root + url.pathname.slice(1) + url.search : url.href;
   const physicalURL = input => {
     const url = canonicalURL(input);
