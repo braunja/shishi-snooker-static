@@ -92,7 +92,12 @@ export function createResourceFetch(nativeFetch, baseURI, cacheStorage = globalT
       ? transportURL(new URL(entry.preview, url)) : resolveURL(url);
   };
   fetchResource.isSnookerAssetFetch = true;
-  fetchResource.fallbackImage = input => localFallbacks.add(physicalURL(input).pathname);
+  fetchResource.fallbackImage = input => {
+    const url=canonicalURL(input);
+    localFallbacks.add(physicalURL(url).pathname);
+    const preview=versionEntry(url.pathname)?.preview;
+    if(preview)localFallbacks.add(new URL(preview,url).pathname);
+  };
   fetchResource.background = () => { priority = "low"; previewEnabled = false; };
   return fetchResource;
 }
