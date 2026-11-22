@@ -29645,17 +29645,17 @@ async function initializeGame({ environment, surfaceLighting: surfaceLighting2, 
   const effectivePowerBar = createEffectivePowerBar(document.querySelector(".toolbar"), powerTrack, () => {
     powerBarNeedsPaint = true;
   }, { showValue: true, maxPower: () => game.getPowerLimit?.() ?? 100, valueFontSize: () => 35.2 * (trialUI?.scale() || Math.min(innerWidth / 1920, innerHeight / 1080)), ...isTrial2 ? { layout: () => trialUI?.effectivePowerBarLayout() } : {} });
-  const [powerBase, powerCue] = await Promise.all(["powerControllerBase", "powerControllerCue"].map(async (key2) => {
-    const image = new Image();
-    image.src = assetUrl(C.StageAssetSources[key2].replace(/^\//, ""));
-    await image.decode();
+  async function loadPowerImage(source) {
+    const url=assetUrl(source),image=new Image();image.crossOrigin='anonymous';
+    image.src=fetch.resolveImageURL(url);
+    try { await image.decode(); }
+    catch { fetch.fallbackImage(url);image.src=fetch.resolveImageURL(url);await image.decode(); }
     return image;
-  }));
+  }
+  const [powerBase, powerCue] = await Promise.all(["powerControllerBase", "powerControllerCue"].map(key2 => loadPowerImage(C.StageAssetSources[key2].replace(/^\//, ""))));
   const shotAssets = { base: powerBase, cue: powerCue };
   let mode = "aim", selectedView = "aim";
-  const modelPowerCue = new Image();
-  modelPowerCue.src = assetUrl("images/ui/power-cues/" + encodeURIComponent(initialCueProfile.cueAppearance) + ".webp");
-  await modelPowerCue.decode();
+  const modelPowerCue = await loadPowerImage("images/ui/power-cues/" + encodeURIComponent(initialCueProfile.cueAppearance) + ".webp");
   if (window.SnookerOnline) window.SnookerOnline.attach(game);
   if (isTrial2) trialUI = await window.SnookerTrialUI.initialize({ core: game, setView: (value) => {
     if (trialUI?.isReplay() || game.isReplay()) replayView = value;
