@@ -1,0 +1,71 @@
+.standalone-battle-actions {
+  position: fixed;
+  z-index: 100005;
+  top: calc(env(safe-area-inset-top, 0px) + 116px);
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(680px, calc(100vw - 32px));
+  padding: 12px 14px;
+  border: 1px solid #c5a264;
+  border-radius: 10px;
+  background: #091d24f5;
+  color: #f5ecd7;
+  box-shadow: 0 8px 24px #0008;
+  font: 600 14px/1.4 system-ui, -apple-system, "PingFang SC", sans-serif;
+  text-align: center;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+.standalone-battle-actions[hidden] { display: none !important; }
+.standalone-battle-actions-title { margin: 0 0 9px; }
+.standalone-battle-actions-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.standalone-battle-actions-controls button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  box-sizing: border-box;
+  min-width: 86px;
+  min-height: 44px;
+  padding: 9px 13px;
+  border: 1px solid #d2b77b;
+  border-radius: 7px;
+  background: #214235;
+  color: #fff3d5;
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.standalone-battle-actions-controls button:focus-visible {
+  outline: 2px solid #ffe09a;
+  outline-offset: 3px;
+}
+.standalone-battle-actions-controls button:active:not(:disabled) { background: #355d49; }
+.standalone-battle-actions-controls button:disabled { opacity: .55; cursor: wait; }
+.standalone-battle-actions-color::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  background: var(--ball-color);
+}
+.standalone-battle-actions-feedback { margin: 9px 0 0; color: #ffd2ad; font-weight: 400; }
+.standalone-battle-actions-feedback:empty { display: none; }
+@media (max-width: 580px) {
+  .standalone-battle-actions { top: calc(env(safe-area-inset-top, 0px) + 106px); width: calc(100vw - 24px); padding: 10px; }
+  .standalone-battle-actions-controls { gap: 6px; }
+  .standalone-battle-actions-controls button { min-width: 78px; flex: 1 0 auto; padding: 8px 10px; }
+}
+@media (max-height: 460px) and (min-width: 581px) {
+  .standalone-battle-actions { top: calc(env(safe-area-inset-top, 0px) + 62px); padding: 8px 10px; }
+  .standalone-battle-actions-title { margin-bottom: 5px; }
+}

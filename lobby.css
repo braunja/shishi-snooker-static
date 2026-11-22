@@ -1,0 +1,43 @@
+/* Lobby layout uses the same logical canvas as the released room artwork. */
+#screen .lobby-topbar{--lobby-bar-height:48px;--lobby-tool-width:44px}
+#screen #app>.topbar.lobby-topbar,
+html[data-product-iphone-topbar-clearance] #screen.portrait #app>.lobby-topbar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) repeat(2,var(--lobby-tool-width));
+  grid-template-rows:minmax(0,1fr);
+  column-gap:4px;
+  height:calc(var(--lobby-bar-height) + var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px));
+  min-height:calc(var(--lobby-bar-height) + var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px));
+  padding:calc(var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px)) calc(12px + var(--ui-safe-right,0px)) 0 calc(12px + var(--ui-safe-left,0px));
+}
+#screen #app>.lobby-topbar>*{grid-column:auto;grid-row:auto;min-height:0;height:100%;width:auto}
+#screen #app>.lobby-topbar>*::before{content:none}
+#screen #app>.lobby-topbar>.identity{flex:none;min-width:0;max-width:100%;justify-self:start;justify-content:flex-start;padding:0 8px 0 0}
+#screen .lobby-topbar .identity-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#screen .lobby-topbar .avatar,#screen .lobby-topbar .level-badge{flex-shrink:0}
+#screen #app>.lobby-topbar>.network-control>.network{width:100%;height:100%;min-height:0;margin:0}
+#screen #app>.lobby-topbar>.fullscreen-button{min-width:0;padding:0}
+/* A single row below the table replaces the former two rows of entries. */
+#screen #app>.lobby-home .mode-nav{top:auto;bottom:10%;height:18%;transform:none}
+#screen.portrait #app>.lobby-home .mode-nav{left:24px;right:24px;top:auto;bottom:10%;height:32%;gap:12px}
+#screen.portrait #app>.lobby-topbar{--lobby-bar-height:64px;--lobby-tool-width:60px}
+#screen.portrait .lobby-topbar .avatar{width:42px;height:42px}
+#screen.portrait .lobby-topbar .identity-name{font-size:20px}
+#screen.portrait .lobby-topbar .level-badge{font-size:14px}
+@media (pointer:coarse){
+  #screen #app>.lobby-topbar{--lobby-bar-height:64px;--lobby-tool-width:60px}
+}
+
+/* Local profile, room and replay content. */
+.local-page .panel{padding:20px;border:1px solid #ffffff26;border-radius:6px;background:#101d23b3;margin-bottom:20px}
+.local-page .panel h2{margin-bottom:16px}
+.local-page .row .actions{margin-top:0}
+.local-page .button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:9px 18px;border:1px solid #ffffff38;border-radius:6px;background:#163d30;text-decoration:none;color:inherit}
+.local-page .players{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin:20px 0}
+.local-page .player{text-align:center;padding:24px 10px;border:1px solid #ffffff26;border-radius:6px;background:#132d25b3}
+.local-page .player strong{display:block;font-size:24px;margin-bottom:12px}.local-page .player .muted{display:block}
+.local-page .room-actions{display:flex;gap:12px}.local-page .invite{display:flex;align-items:center;gap:14px;margin-top:20px}.local-page .invite p{font-size:13px}
+.local-profile .profile,.profile{display:flex;align-items:center;gap:12px}.profile label{white-space:nowrap}.profile input{min-width:0}.profile button{flex-shrink:0}
+.local-notice{position:absolute;z-index:200;left:50%;bottom:24px;transform:translateX(-50%);max-width:80%;padding:12px 24px;border:1px solid #ffffff38;border-radius:6px;background:#12271fed;color:#fff;pointer-events:none;text-align:center}.local-notice.error{color:#ffb9ad}
+.local-page .centered{text-align:center}.local-page .centered .profile{margin:24px 0}.local-page .empty{min-height:70px;align-items:flex-start}
+#screen.portrait .local-page .players{gap:10px}#screen.portrait .local-page .invite,#screen.portrait .local-page .row{flex-wrap:wrap}#screen.portrait .local-page .profile{flex-wrap:wrap}

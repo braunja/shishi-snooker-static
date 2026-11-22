@@ -1,0 +1,16 @@
+{
+  "method": "Whole floor rebaked in original venue lighting. Geometry AO packed in existing normal alpha. No local blend, polynomial fitting, sign clamp, or rectangular specular mask.",
+  "resolution": [
+    2048,
+    2048
+  ],
+  "quantizationError": 0.0017681121826171875,
+  "runtimeTextureCountChange": -1,
+  "retiredLocalTextureGPUBytes": 8388608,
+  "range": {
+    "lightMin": 0,
+    "lightMax": 1.6826171875,
+    "aoMin": 0,
+    "aoMax": 1.0927734375
+  }
+}

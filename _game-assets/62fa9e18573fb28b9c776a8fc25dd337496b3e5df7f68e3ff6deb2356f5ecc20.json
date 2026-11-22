@@ -1,0 +1,33 @@
+{
+  "assets": {
+    "irradiance-architecture-linear.exr": {
+      "file": "irradiance-architecture.rgb9e5.bin.gz",
+      "width": 2048,
+      "height": 2048,
+      "format": "RGB9_E5",
+      "bytes": 16777216,
+      "roughness": "irradiance-architecture.roughness.r8.bin.gz",
+      "roughnessBytes": 4194304
+    },
+    "irradiance-players-linear.exr": {
+      "file": "irradiance-players.rgb9e5.bin.gz",
+      "width": 2048,
+      "height": 2048,
+      "format": "RGB9_E5",
+      "bytes": 16777216,
+      "roughness": "irradiance-players.roughness.r8.bin.gz",
+      "roughnessBytes": 4194304
+    },
+    "table-body-linear.exr": {
+      "file": "table-body.rgb9e5.bin.gz",
+      "compact": {
+        "file": "table-body.rgb9e5-q5-paeth.bin.gz",
+        "encoding": "rgb9e5-q5-paeth"
+      },
+      "width": 2048,
+      "height": 2048,
+      "format": "RGB9_E5",
+      "bytes": 16777216
+    }
+  }
+}

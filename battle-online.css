@@ -1,0 +1,117 @@
+.battle-hud { position: fixed; z-index: 100000; bottom: calc(env(safe-area-inset-bottom, 0px) + 10px); left: 50%; transform: translateX(-50%); width: min(92vw, 700px); padding: 0; border: 1px solid #c5a264; border-radius: 3px; background: #071526f0; color: #f5f0e5; box-shadow: 0 8px 25px #000b; font: 600 13px/1.2 system-ui, -apple-system, "PingFang SC", sans-serif; pointer-events: auto; backdrop-filter: blur(10px); }
+.battle-hud::before { content: ""; position: absolute; top: 0; right: 0; left: 0; height: 3px; background: linear-gradient(90deg, #a97833, #e8d5a0 50%, #a97833); }
+.battle-hud .scoreline { display: grid; grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr); align-items: stretch; min-height: 48px; padding: 3px 8px 0; }
+.battle-hud .seat { min-width: 0; display: grid; grid-template-columns: 9px minmax(0, 1fr) 42px 27px; align-items: center; gap: 5px; }
+.battle-hud .seat:last-child { grid-template-columns: 27px 42px minmax(0, 1fr) 9px; }
+.battle-hud .turn-pin { width: 6px; height: 6px; border-radius: 50%; background: transparent; }
+.battle-hud .seat.turn .turn-pin { background: #efc660; box-shadow: 0 0 7px #ffda79; }
+.battle-hud .name { min-width: 0; display: flex; flex-direction: column; gap: 2px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 15px; }
+.battle-hud .name > span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.battle-hud .seat:last-child .name { text-align: right; }
+.battle-hud .name small { color: #d2b977; font-size: 10px; }
+.battle-hud .score { text-align: center; font-size: 23px; font-variant-numeric: tabular-nums; }
+.battle-hud .frames { display: grid; place-items: center; height: 30px; background: #e8e3d5; color: #071526; font-size: 16px; font-variant-numeric: tabular-nums; }
+.battle-hud .score-meta { display: grid; align-content: center; justify-items: center; gap: 2px; color: #c7c6bd; font-size: 10px; }
+.battle-hud .score-meta strong { color: #f7f0d9; font-size: 11px; white-space: nowrap; }
+.battle-hud .detail { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 10px; border-top: 1px solid #ffffff2b; background: #0d2631; color: #c2d0cb; font-size: 11px; font-weight: 500; }
+.battle-hud .detail span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.battle-hud #battle-status { flex: 1; }
+.battle-hud #battle-presence { flex: none; color: #aab8b4; font-weight: 700; }
+.battle-hud #battle-presence::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 5px; border-radius: 50%; background: #778681; vertical-align: 1px; }
+.battle-hud #battle-presence.present::before { background: #73dc94; box-shadow: 0 0 7px #73dc94; }
+.battle-hud #battle-presence.away { color: #f2c882; }
+.battle-hud #battle-presence.away::before { background: #e8b664; box-shadow: 0 0 7px #e8b664; }
+.battle-hud #battle-pause { flex: none; min-height: 30px; border: 1px solid #a88a50; border-radius: 4px; padding: 4px 8px; background: #18343b; color: #f2dfad; font: inherit; cursor: pointer; }
+.battle-hud #battle-pause:disabled { opacity: .5; cursor: default; }
+.battle-hud a { display: inline-flex; flex: none; align-items: center; min-height: 30px; padding: 3px 5px; color: #e5c788; text-decoration: none; white-space: nowrap; }
+.battle-hud #battle-home-link { border: 1px solid #a88a50; border-radius: 4px; background: #273923; color: #f4e2b7; }
+.battle-hud .error { color: #ffab96; }
+.battle-hud .battle-social-controls { position: absolute; z-index: 2; right: 0; bottom: calc(100% + 8px); display: flex; gap: 6px; align-items: center; }
+.battle-hud .battle-social-controls button, .battle-hud .battle-social-menu button { min-height: 38px; padding: 7px 12px; border: 1px solid #b99a60; border-radius: 7px; background: #102b31ed; color: #f5e6c5; font: 700 12px/1.2 system-ui, -apple-system, "PingFang SC", sans-serif; white-space: nowrap; touch-action: manipulation; cursor: pointer; }
+.battle-hud #battle-social-clap { border-color: #e1bb6d; background: #694924f2; color: #fff1cb; }
+.battle-hud .battle-social-controls button:focus-visible, .battle-hud .battle-social-menu button:focus-visible { outline: 2px solid #ffe09a; outline-offset: 2px; }
+.battle-hud .battle-social-menu { position: absolute; z-index: 4; right: 0; bottom: calc(100% + 52px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; width: min(320px, calc(100vw - 20px)); max-height: min(50vh, 330px); overflow: auto; padding: 9px; border: 1px solid #bf9e63; border-radius: 10px; background: #0b2029f5; box-shadow: 0 12px 32px #000b; }
+.battle-hud .battle-social-menu button { white-space: normal; text-align: center; }
+.battle-hud .battle-social-toast { position: absolute; z-index: 3; left: 50%; bottom: calc(100% + 54px); transform: translateX(-50%); max-width: min(360px, calc(100vw - 28px)); padding: 10px 18px; border: 1px solid #deb974; border-radius: 10px; background: #0b2630f2; color: #fff0d0; box-shadow: 0 10px 28px #0009; font: 750 15px/1.3 system-ui, -apple-system, "PingFang SC", sans-serif; text-align: center; overflow-wrap: anywhere; pointer-events: none; }
+.battle-hud .battle-social-toast[data-kind="clap"] { background: #473219f5; box-shadow: 0 0 20px #e3b75866, 0 10px 28px #0009; }
+.battle-hud .battle-social-toast[data-kind="error"] { border-color: #ec9b7e; color: #ffd7c6; }
+.battle-hud .battle-social-toast.burst { animation: battle-clap-pop .36s ease-out both; }
+.battle-hud .battle-social-toast.burst::before { content: ""; position: absolute; top: 35%; left: 50%; width: 5px; height: 5px; border-radius: 50%; background: #ffe49a; box-shadow: -36px -18px #edbd60, 30px -25px #ffd782, -48px 14px #f4d489, 43px 15px #e4ae55, -15px -32px #fff0b3, 16px 31px #eabd6b; animation: battle-clap-sparks 1.1s ease-out both; }
+@keyframes battle-clap-pop { from { opacity: 0; transform: translateX(-50%) scale(.75); } to { opacity: 1; transform: translateX(-50%) scale(1); } }
+@keyframes battle-clap-sparks { from { opacity: 0; transform: scale(.3) translateY(0); } 30% { opacity: 1; } to { opacity: 0; transform: scale(1.55) translateY(-12px); } }
+@media (prefers-reduced-motion: reduce) { .battle-hud .battle-social-toast.burst, .battle-hud .battle-social-toast.burst::before { animation: none; } }
+.battle-presence-banner { position: fixed; z-index: 100004; top: calc(env(safe-area-inset-top, 0px) + 68px); left: 50%; transform: translateX(-50%); display: grid; gap: 3px; width: min(340px, calc(100vw - 24px)); padding: 12px 17px; border: 1px solid #7cce9b; border-radius: 10px; background: #0c3329f2; color: #e6f8e9; box-shadow: 0 10px 32px #0009; font: 14px/1.35 system-ui, -apple-system, "PingFang SC", sans-serif; text-align: center; pointer-events: none; backdrop-filter: blur(10px); }
+.battle-presence-banner strong { font-size: 17px; }
+.battle-presence-banner span { color: #cde6d4; font-size: 12px; }
+.battle-presence-banner.is-away { border-color: #d8aa5b; background: #3a2b19f2; color: #ffdc99; }
+.battle-presence-banner.is-away span { color: #f4dcba; }
+.battle-notice { position: fixed; z-index: 100004; top: calc(env(safe-area-inset-top, 0px) + 68px); left: 50%; transform: translateX(-50%); max-width: calc(100vw - 24px); padding: 10px 16px; border: 1px solid #c5a264; border-radius: 8px; background: #0c2b22f0; color: #f5ecd7; box-shadow: 0 10px 30px #0009; font: 600 14px/1.3 system-ui, -apple-system, "PingFang SC", sans-serif; text-align: center; pointer-events: none; }
+.battle-end-panel { position: fixed; z-index: 100003; top: 48%; left: 50%; transform: translate(-50%, -50%); width: min(360px, calc(100vw - 36px)); padding: 22px 20px; border: 1px solid #c5a264; border-radius: 12px; background: #091d24ed; color: #f5ecd7; box-shadow: 0 20px 50px #000c; backdrop-filter: blur(10px); text-align: center; font: 600 14px/1.4 system-ui, -apple-system, "PingFang SC", sans-serif; }
+.battle-end-panel p { margin: 0 0 8px; color: #d5b971; letter-spacing: .2em; font-size: 12px; }
+.battle-end-panel h2 { margin: 0 0 20px; font-size: 24px; }
+.battle-end-panel > div { display: flex; justify-content: center; gap: 10px; }
+.battle-end-panel button, .battle-end-panel a { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 8px 14px; border: 1px solid #c5a264; border-radius: 7px; background: #cba55d; color: #102019; font: 700 14px system-ui, -apple-system, "PingFang SC", sans-serif; text-decoration: none; cursor: pointer; }
+.battle-end-panel a { background: #18343b; color: #f5ecd7; }
+.battle-end-panel button:disabled { opacity: .6; cursor: default; }
+.battle-hud[hidden], .battle-hud [hidden], .battle-presence-banner[hidden], .battle-notice[hidden], .battle-end-panel[hidden], .battle-end-panel [hidden] { display: none !important; }
+@media (max-width: 580px) {
+  .battle-hud { bottom: calc(env(safe-area-inset-bottom, 0px) + 5px); width: calc(100vw - 12px); }
+  .battle-hud .scoreline { grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr); min-height: 42px; padding: 3px 4px 0; }
+  .battle-hud .seat { grid-template-columns: 6px minmax(0, 1fr) 27px 19px; gap: 2px; }
+  .battle-hud .seat:last-child { grid-template-columns: 19px 27px minmax(0, 1fr) 6px; }
+  .battle-hud .name { font-size: 11px; }
+  .battle-hud .name small { font-size: 8px; }
+  .battle-hud .score { font-size: 17px; }
+  .battle-hud .frames { height: 24px; font-size: 12px; }
+  .battle-hud .score-meta { font-size: 8px; }
+  .battle-hud .score-meta strong { font-size: 9px; }
+  .battle-hud .detail { flex-wrap: wrap; padding: 3px 7px; font-size: 10px; gap: 2px 7px; }
+  .battle-hud #battle-status { flex: 1 0 100%; }
+  .battle-hud #battle-presence { flex: 1; }
+  .battle-hud #battle-pause { padding: 2px 6px; }
+  .battle-hud a { min-height: 32px; }
+  .battle-presence-banner { top: calc(env(safe-area-inset-top, 0px) + 56px); padding: 9px 12px; }
+  .battle-presence-banner strong { font-size: 14px; }
+  .battle-notice { top: calc(env(safe-area-inset-top, 0px) + 56px); font-size: 12px; }
+}
+
+/* Match chrome uses the released design layer. Slotted controls retain their
+   public IDs and existing event handlers, while scores live in native #screen. */
+.battle-native-match #trial-fullscreen,
+.battle-native-match #trial-fps,
+.battle-native-match #trial-practice-controls,
+.battle-native-match .independent-nav { display: none !important; }
+.battle-native-match .battle-hud { position: static; inset: auto; transform: none; width: auto; min-width: 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; color: #f2f4f2; font: inherit; pointer-events: auto; }
+.battle-native-match .battle-hud::before,
+.battle-native-match .battle-menu-hud .scoreline { display: none; }
+.battle-native-match .battle-menu-hud .detail { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; }
+.battle-native-match .battle-menu-hud .detail > :is(button,a) { display: flex; flex: none; align-items: center; justify-content: flex-start; box-sizing: border-box; width: 100%; height: 46px; min-height: 46px; margin: 0; padding: 0 18px; border: 0; border-radius: 0; background: transparent; color: #f2f4f2; box-shadow: none; font: inherit; font-size: 14px; text-align: left; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.battle-native-match .battle-menu-hud .detail > :is(button,a) + :is(button,a) { border-top: 1px solid #ffffff24; }
+.battle-native-match .battle-menu-hud .detail > :is(button,a):hover { background: #ffffff12; }
+.battle-native-match .battle-menu-hud .detail > :is(button,a):disabled { opacity: .45; cursor: default; }
+.battle-native-match .battle-menu-hud #battle-status,
+.battle-native-match .battle-menu-hud #battle-presence,
+.battle-native-match .battle-menu-hud #battle-shot-clock { flex: none; padding: 5px 12px; white-space: normal; overflow: visible; color: #c6d7cd; font-size: 11px; }
+.battle-native-match .battle-social-hud .battle-social-controls { position: static; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.battle-native-match .battle-social-hud .battle-social-controls button,
+.battle-native-match .battle-social-hud .battle-social-menu button,
+.battle-native-match .battle-social-hud .battle-social-roster button { min-height: 40px; padding: 7px 8px; border-color: #ffffff35; border-radius: 5px; background: #ffffff0b; color: #f3ead6; font: inherit; font-size: 13px; }
+.battle-native-match .battle-social-hud .battle-social-controls #battle-social-context { grid-column: 1 / -1; }
+.battle-native-match .battle-social-hud .battle-social-menu { position: static; display: grid; grid-template-columns: 1fr 1fr; box-sizing: border-box; width: 100%; max-height: 250px; margin-top: 6px; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.battle-native-match .battle-toast-hud { pointer-events: none; }
+.battle-native-match .battle-toast-hud .battle-social-toast { position: static; display: block; transform: none; width: max-content; max-width: 360px; margin: 0; padding: 8px 16px; border-color: #ffffff35; background: #101915e6; font: inherit; font-size: 15px; }
+.battle-native-match .battle-presence-banner { top: calc(env(safe-area-inset-top,0px) + 96px); }
+.battle-native-match .battle-end-panel { z-index: 170; }
+.battle-native-match .battle-hud [hidden] { display: none !important; }
+
+.battle-hud .battle-social-roster {
+  padding: 9px 10px;
+  border: 1px solid #ffffff35;
+  border-radius: 5px;
+  background: #101915e6;
+  color: #f4f0df;
+  font-size: 14px;
+}
+.battle-social-roster p { margin: 6px 0; overflow-wrap: anywhere; }
+.battle-social-roster button { width: 100%; }
+.battle-native-match .battle-social-hud .battle-social-roster button[aria-checked="true"] { background: #5f4b27; border-color: #d9b977; }

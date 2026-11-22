@@ -1,0 +1,36 @@
+.inbox { margin: 24px 0; padding: 18px; border: 1px solid #46654d; border-radius: 14px; background: #0a2419b8; }
+.inbox h2 { margin: 0 0 12px; color: #f4e7bf; font-size: 18px; }
+.inbox .count { display: inline-grid; place-items: center; min-width: 24px; height: 24px; margin-left: 6px; border-radius: 999px; background: #c49439; color: #111e16; font-size: 12px; }
+.inbox > div { color: #9fb6a5; font-size: 14px; }
+.inbox .invite-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid #ffffff20; }
+.inbox .invite-item:first-child { border-top: 0; }
+.invite-item-info { min-width: 0; display: grid; gap: 4px; }
+.invite-item-info strong { color: #f8eed7; overflow-wrap: anywhere; }
+.invite-item-info small { color: #a9c0ad; }
+.invite-item-actions { display: flex; flex: none; flex-wrap: wrap; gap: 7px; }
+.invite-item-actions a, .invite-item-actions button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px; border: 1px solid #d4a953; border-radius: 9px; background: #d6a947; color: #102019; font: 750 13px/1.2 system-ui, sans-serif; text-decoration: none; }
+.inbox.active { border-color: #6aa777; background: #103522d9; }
+.inbox.active .invite-item > a { display: inline-flex; flex: none; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px; border: 1px solid #d4a953; border-radius: 9px; background: #d6a947; color: #102019; font: 750 13px/1.2 system-ui, sans-serif; text-decoration: none; }
+.spectator-inbox { margin-bottom: 0; }
+.spectator-inbox > p { margin: 0 0 14px; color: #b8c9b8; line-height: 1.5; }
+.spectator-inbox form { display: grid; gap: 8px; margin-bottom: 14px; }
+.spectator-inbox form button { margin-top: 2px; }
+.spectator-inbox .invite-item-info small { color: #b6caaf; }
+.invite-item-actions .secondary, .room-actions .secondary { background: #133525; color: #ead7ab; }
+.inbox.sent { margin-bottom: 0; }
+.invite-toast { position: fixed; z-index: 100010; top: calc(env(safe-area-inset-top, 0px) + 12px); right: calc(env(safe-area-inset-right, 0px) + 12px); width: min(300px, calc(100vw - 24px)); padding: 16px; border: 1px solid #d2ad67; border-radius: 13px; background: #092219f5; color: #f5ead0; box-shadow: 0 14px 36px #000a; font: 14px/1.45 system-ui, -apple-system, "PingFang SC", sans-serif; backdrop-filter: blur(12px); }
+.invite-toast > strong { color: #f3d284; font-size: 13px; }
+.invite-toast p { margin: 7px 0 13px; overflow-wrap: anywhere; }
+.invite-toast > div { display: flex; gap: 8px; }
+.invite-toast a, .invite-toast button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 9px 15px; border: 1px solid #d6ad5f; border-radius: 8px; background: #d6ad5f; color: #14251b; font: 750 14px system-ui, sans-serif; text-decoration: none; cursor: pointer; }
+.invite-toast button { background: transparent; color: #e9d4a5; }
+body:has(.home) .invite-toast { top: calc(env(safe-area-inset-top, 0px) + 62px); }
+html[data-product=trial] .invite-toast { left: calc(env(safe-area-inset-left, 0px) + 10px); right: auto; width: min(250px, calc(100vw - 20px)); padding: 11px; font-size: 12px; }
+html[data-product=trial] .invite-toast p { margin: 4px 0 9px; }
+html[data-product=trial] .invite-toast a, html[data-product=trial] .invite-toast button { touch-action: manipulation !important; }
+body:has(#viewer.is-loading) > :not(#viewer).invite-toast { visibility: visible !important; }
+.invite-toast[hidden] { display: none !important; }
+@media (max-width: 520px) {
+  .inbox .invite-item { align-items: flex-start; flex-direction: column; }
+  .invite-toast { width: min(280px, calc(100vw - 20px)); padding: 13px; }
+}

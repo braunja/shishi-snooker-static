@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "binary": "cloth-reflection-rough095-64.rgba16f.bin.gz",
+  "binarySha256": "904c8b0674e0b355c7aafdf41c53c77e7e2ca5b7c981acab0a84815609454859",
+  "uncompressedSha256": "16d7c2355fd90b00a1c0b3ad58bd27373761e75b1e337f0d03c7bbe6b663333d",
+  "size": 64,
+  "channels": 4,
+  "type": "rgba16f-le",
+  "colorSpace": "display-space response; no runtime color conversion",
+  "roughness": 0.95,
+  "faces": [
+    "px",
+    "nx",
+    "py",
+    "ny",
+    "pz",
+    "nz"
+  ],
+  "compression": "gzip",
+  "byteLength": 196608,
+  "sourceHashes": {
+    "textures/crucible-continuous-soft/cube-px.png": "a83dc45bacc017bfe003de542e959797f3664db97d3aea5b0765c40c0827d2b5",
+    "textures/crucible-continuous-soft/cube-nx.png": "ff7607159d4be51ff9e96cb55e4c7091129d547af6945ccd041cf01b3af3a40f",
+    "textures/crucible-continuous-soft/cube-py.png": "37b7f30a7e310cb832761f3fa071d6a0dff6279d140fe11daf215ccecc826a46",
+    "textures/crucible-continuous-soft/cube-ny.png": "76f6ce07860326c8f0945761c3cb8181834229a99b590fb68cc15f5996eea740",
+    "textures/crucible-continuous-soft/cube-pz.png": "2f7608697b23be74a7f3ef3a6a6c1fbff9be2b0a7e3f6da76c3d3fdd2938683f",
+    "textures/crucible-continuous-soft/cube-nz.png": "5ff0b7fd0c63fa306a41814c931ea329a0822c420f0de2006ae584976901e26e",
+    "vendor/three.module.min.js": "86bcee248b64f44bcfc23c331ae74619061957d59cab040171dcb6fb5900beb6"
+  },
+  "preparation": "Offline sampled clothDisplayColor(textureCubeUV(current PMREM, normalize(direction)*(-1,1,1),0.95)). CubeCamera face convention; no vertical flip.",
+  "validation": "diagnostics/gpu-cost-audit-20261022/cloth-visual-results.json",
+  "generator": "diagnostics/gpu-cost-audit-20261022/cloth-visual.cjs; CubeCamera export only in developer browser, never at runtime"
+}

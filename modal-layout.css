@@ -1,0 +1,12 @@
+dialog.auth-dialog,dialog.product-settings,dialog.design-dialog{position:fixed;inset:auto;margin:0;max-width:none;max-height:none;transform:translate(-50%,-50%) scale(var(--dialog-scale,1));transform-origin:center;box-sizing:border-box}
+
+#screen dialog.design-dialog{padding:0;overflow:visible;height:auto;max-height:none}#screen dialog.design-dialog::backdrop{background:#0008;backdrop-filter:blur(3px)}#screen #overlay:has(dialog.design-dialog){background:transparent;backdrop-filter:none;pointer-events:none}#screen dialog.design-dialog{pointer-events:auto}
+
+#screen dialog.design-dialog[data-auth-suspended],#screen dialog.design-dialog[data-auth-suspended]::backdrop{visibility:hidden;pointer-events:none}
+
+/* Native top-layer backdrops must not inherit dialog/canvas sizing or transforms. */
+dialog.auth-dialog::backdrop,dialog.product-settings::backdrop,dialog.design-dialog::backdrop{position:fixed;inset:0;transform:none;zoom:1;margin:0;max-width:none;max-height:none}
+
+.product-native-modal-backdrop{position:fixed;inset:0;z-index:2147483646;width:auto;height:auto;margin:0;padding:0;border:0;background:#0008;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);pointer-events:none}
+.product-native-modal-backdrop[hidden]{display:none!important}
+:root[data-native-modal-backdrop] dialog::backdrop{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}

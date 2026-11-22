@@ -1,0 +1,71 @@
+{
+  "style": "world-final-2025",
+  "label": "2025 决赛 · 暖灰",
+  "runtimeVariant": "crucible-2026-lite",
+  "excludedShadowCasters": [
+    "Floor camera 1 · studio system",
+    "Floor camera 2 · studio system",
+    "Floor camera 3 · studio system",
+    "Review06 · walk-on exterior side handrail"
+  ],
+  "receivers": {
+    "floor": [
+      "Continuous event carpet"
+    ]
+  },
+  "approvedScene": "diagnostics/under-table-lighting-20261118/apron-fit-review/upper-edge/wide-strip/2025-final-apron-wide-50mm-review.blend",
+  "approvedSha256": "41c24985df1419a67e76d6f0f0c2f1d8a532d553f1acc90ff59edee6f752533b",
+  "files": {
+    "floor.glb": "f78702fd67497285f9fff06966d712a691936db208310a258c0ea9398dd99132",
+    "floor-radiance.rgb9e5.bin.gz": "0473e9df7d75880e689680248b81ca1439f139ca791913c7f97082135df18e77",
+    "floor-radiance-wide.rgb9e5.bin.gz": "3976fda2989f82a156ccabceeae9b25786788ff77c0cb48c9460f10ba0ddf517"
+  },
+  "floorRadiance": {
+    "file": "floor-radiance.rgb9e5.bin.gz",
+    "width": 1548,
+    "height": 1548,
+    "tile": 256,
+    "origin": [
+      -3.5,
+      -3.5
+    ],
+    "extent": [
+      7.0,
+      7.0
+    ],
+    "encoding": "rgb9e5-row-delta",
+    "gpuBytes": 9585216,
+    "ringElevations": [
+      0.17364817766693033,
+      0.3420201433256687,
+      0.49999999999999994,
+      0.766044443118978
+    ],
+    "wide": {
+      "file": "floor-radiance-wide.rgb9e5.bin.gz",
+      "width": 780,
+      "height": 780,
+      "tile": 128,
+      "origin": [
+        -16,
+        -16
+      ],
+      "extent": [
+        32,
+        32
+      ],
+      "encoding": "rgb9e5-row-delta",
+      "gpuBytes": 2433600,
+      "lowElevation": 0.17364817766693033,
+      "ringElevations": [
+        0.17364817766693033,
+        0.3420201433256687,
+        0.49999999999999994,
+        0.766044443118978
+      ],
+      "azimuthCount": 8
+    },
+    "viewDependent": true,
+    "azimuthCount": 8
+  }
+}

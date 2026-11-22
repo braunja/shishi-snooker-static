@@ -1,0 +1,1675 @@
+{
+  "name": "roomRoot",
+  "position": [
+    0.0,
+    0.6237999796867371,
+    1.1399999856948853
+  ],
+  "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "children": [
+    {
+      "name": "reflectionConnector",
+      "position": [
+        -3.7869999408721924,
+        1.3270000219345093,
+        -0.09399999678134918
+      ],
+      "quaternion": [
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0
+      ],
+      "scale": [
+        2.283629894256592,
+        1.1005899906158447,
+        3.0563199520111084
+      ],
+      "children": [
+        {
+          "name": "roomShell",
+          "position": [
+            1.6583248376846313,
+            -1.7725040912628174,
+            0.017668306827545166
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            0.5,
+            0.9086035490036011,
+            0.37719088792800903
+          ],
+          "children": [
+            {
+              "name": "bench",
+              "position": [
+                -0.0005653166444972157,
+                0.785440981388092,
+                -3.518373966217041
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/bench.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "chairSwivel",
+              "position": [
+                3.2435436248779297,
+                0.5754861831665039,
+                -2.5952916145324707
+              ],
+              "quaternion": [
+                0.22360873222351074,
+                -0.6708192825317383,
+                0.6708203554153442,
+                0.22360838949680328
+              ],
+              "scale": [
+                43.94566345214844,
+                43.94566345214844,
+                32.9503173828125
+              ],
+              "children": [],
+              "mesh": "models/environment/chair-swivel.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "cueRack",
+              "position": [
+                -3.1456139087677,
+                1.6628434658050537,
+                2.801649808883667
+              ],
+              "quaternion": [
+                -5.338507946817117e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338507946817117e-08
+              ],
+              "scale": [
+                0.888276994228363,
+                0.888276994228363,
+                0.888276994228363
+              ],
+              "children": [],
+              "mesh": "models/environment/cue-rack.obj",
+              "materials": [
+                {
+                  "name": "cueRackMaterial",
+                  "shader": "sm/cutout",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5699999928474426,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/cue-rack-material-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": true,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "doorsdouble",
+              "position": [
+                -4.087677001953125,
+                1.1926158666610718,
+                7.457265853881836
+              ],
+              "quaternion": [
+                -0.4999999403953552,
+                0.4999997615814209,
+                -0.5000000596046448,
+                0.5000002384185791
+              ],
+              "scale": [
+                1.7453486919403076,
+                1.453940510749817,
+                1.7453486919403076
+              ],
+              "children": [],
+              "mesh": "models/environment/doorsdouble.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "floorBit",
+              "position": [
+                0.005213968455791473,
+                -7.629394076502649e-07,
+                3.1019036769866943
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/floor-bit.obj",
+              "materials": [
+                {
+                  "name": "floorMetal",
+                  "shader": "sm/metal",
+                  "floats": {
+                    "<noninit>": 8.739999771118164,
+                    "amount": 2.509999990463257,
+                    "fresnelAmount": 0.8899999856948853,
+                    "fresnelFocus": 0.07999999821186066,
+                    "mainAmount": 1.0
+                  },
+                  "texture": "textures/scene/floor-metal-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "metal"
+                },
+                {
+                  "name": "floorTile",
+                  "shader": "sm/cloth",
+                  "floats": {
+                    "<noninit>": 1.7899999618530273,
+                    "amount": 3.0,
+                    "detailsLighten": 0.09000000357627869,
+                    "detailsPow": 0.15000000596046448,
+                    "detailsPow2": 1.7400000095367432,
+                    "diffuseAmount": 0.8600000143051147,
+                    "fresnelAmount": 5.0,
+                    "fresnelFocus": 0.03999999910593033,
+                    "fresnelReflection": 1.0,
+                    "fresnelReflectionIntensity": 8.0,
+                    "mainAmount": 1.0,
+                    "roughness": -0.0
+                  },
+                  "texture": "textures/scene/floor-tile-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "cloth"
+                }
+              ],
+              "floorSurface": true
+            },
+            {
+              "name": "lightEmit",
+              "position": [
+                -0.0005658506997860968,
+                2.447237730026245,
+                0.0019033813150599599
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                0.5777747631072998,
+                0.9132828712463379,
+                0.5826473236083984
+              ],
+              "children": [],
+              "mesh": "models/environment/light-emit.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "noticeBoard",
+              "position": [
+                7.551025390625,
+                3.0517577442878974e-07,
+                11.470129013061523
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                0.054448824375867844,
+                1.7548376321792603,
+                1.0714863538742065
+              ],
+              "children": [],
+              "mesh": "models/environment/notice-board.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "pictureFrames",
+              "position": [
+                -4.115989685058594,
+                1.7276993989944458,
+                -1.6832013130187988
+              ],
+              "quaternion": [
+                1.4189487274052226e-07,
+                0.7071067094802856,
+                -1.4189484431881283e-07,
+                0.7071068286895752
+              ],
+              "scale": [
+                0.6745143532752991,
+                0.5729262232780457,
+                0.6445479393005371
+              ],
+              "children": [],
+              "mesh": "models/environment/picture-frames.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "pictureGiraffe",
+              "position": [
+                -0.0005658506997860968,
+                0.0,
+                0.08541961759328842
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/picture-giraffe.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "roomFloor",
+              "position": [
+                0.005213968455791473,
+                -7.629394076502649e-07,
+                3.1019036769866943
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/room-floor.obj",
+              "materials": [
+                {
+                  "name": "floorTile",
+                  "shader": "sm/cloth",
+                  "floats": {
+                    "<noninit>": 1.7899999618530273,
+                    "amount": 3.0,
+                    "detailsLighten": 0.09000000357627869,
+                    "detailsPow": 0.15000000596046448,
+                    "detailsPow2": 1.7400000095367432,
+                    "diffuseAmount": 0.8600000143051147,
+                    "fresnelAmount": 5.0,
+                    "fresnelFocus": 0.03999999910593033,
+                    "fresnelReflection": 1.0,
+                    "fresnelReflectionIntensity": 8.0,
+                    "mainAmount": 1.0,
+                    "roughness": -0.0
+                  },
+                  "texture": "textures/scene/floor-tile-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "cloth"
+                },
+                {
+                  "name": "floorMetal",
+                  "shader": "sm/metal",
+                  "floats": {
+                    "<noninit>": 8.739999771118164,
+                    "amount": 2.509999990463257,
+                    "fresnelAmount": 0.8899999856948853,
+                    "fresnelFocus": 0.07999999821186066,
+                    "mainAmount": 1.0
+                  },
+                  "texture": "textures/scene/floor-metal-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "metal"
+                },
+                {
+                  "name": "floorCarpetDetail",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "<noninit>": 3.0,
+                    "amount": 0.7799999713897705,
+                    "detailsLighten": 0.41999998688697815,
+                    "detailsPow": 1.7100000381469727,
+                    "detailsPow2": 1.350000023841858,
+                    "diffuseAmount": 0.15000000596046448,
+                    "fresnelAmount": 0.9800000190734863,
+                    "fresnelFocus": 0.029999999329447746,
+                    "fresnelReflection": 1.0,
+                    "fresnelReflectionIntensity": 6.809999942779541,
+                    "mainAmount": 0.7300000190734863,
+                    "roughness": 0.0
+                  },
+                  "texture": "textures/scene/floor-tile-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": true,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": true
+            },
+            {
+              "name": "roomFloorUnlit",
+              "position": [
+                0.005213968455791473,
+                -7.629394076502649e-07,
+                3.1019036769866943
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/room-floor-unlit.obj",
+              "materials": [
+                {
+                  "name": "floorTileUnlit",
+                  "shader": "sm/diffuse",
+                  "floats": {
+                    "<noninit>": 1.7899999618530273,
+                    "alpha": 1.0,
+                    "ambientHeight": 0.5,
+                    "ambientLightness": 0.5,
+                    "ambientLow": 0.0,
+                    "amount": 1.0,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "designPowerBlue": 1.0,
+                    "designPowerGreen": 1.0,
+                    "designPowerRed": 1.0,
+                    "detailNormalMapScale": 1.0,
+                    "detailsLighten": 0.1599999964237213,
+                    "detailsPow": 0.28999999165534973,
+                    "detailsPow2": 3.069999933242798,
+                    "diffuseAmount": 0.0,
+                    "dstBlend": 0.0,
+                    "emission": 0.7300000190734863,
+                    "fresnelAmount": 1.940000057220459,
+                    "fresnelFocus": 0.05000000074505806,
+                    "fresnelReflection": 1.0,
+                    "fresnelReflectionIntensity": 8.0,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.8199999928474426,
+                    "glossyReflections": 0.0,
+                    "mainAmount": 0.44999998807907104,
+                    "metallic": 0.0,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "patternAlpha": 1.0,
+                    "power": 0.4699999988079071,
+                    "powerBlue": 1.0,
+                    "powerBlue2": 0.0,
+                    "powerGreen": 1.0,
+                    "powerRed": 1.0,
+                    "roughness": -0.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specularAmount": 0.5,
+                    "specularHighlights": 1.0,
+                    "specularity": 0.8999999761581421,
+                    "srcBlend": 1.0,
+                    "subPowerBlue": 0.0,
+                    "subPowerGreen": 0.0,
+                    "subPowerRed": 0.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 0.5,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/floor-tile-unlit-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                },
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": true
+            },
+            {
+              "name": "roomRoof",
+              "position": [
+                -0.0005658506997860968,
+                0.0,
+                0.08541961759328842
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/room-roof.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "roomWalls",
+              "position": [
+                -0.0005658506997860968,
+                0.0,
+                0.08541961759328842
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/room-walls.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "shelfBottom",
+              "position": [
+                0.99013751745224,
+                0.9591125249862671,
+                2.561061382293701
+              ],
+              "quaternion": [
+                -0.5000001192092896,
+                0.4999999403953552,
+                0.4999999403953552,
+                0.5000001192092896
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/shelf-bottom.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "shinySurface",
+              "position": [
+                -0.0005658506997860968,
+                0.0,
+                0.08541961759328842
+              ],
+              "quaternion": [
+                -5.338508302088485e-08,
+                0.7071068286895752,
+                0.7071068286895752,
+                5.338508302088485e-08
+              ],
+              "scale": [
+                1.2183727025985718,
+                0.8928201794624329,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/shiny-surface.obj",
+              "materials": [
+                {
+                  "name": "roomPolishedMaterial",
+                  "shader": "sm/wood",
+                  "floats": {
+                    "<noninit>": 0.10999999940395355,
+                    "amount": 0.4300000071525574,
+                    "fresnelAmount": 0.9900000095367432,
+                    "fresnelFocus": 0.03999999910593033,
+                    "mainAmount": 0.8600000143051147
+                  },
+                  "texture": "textures/scene/room-polished-material-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "wood"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "trophySnooker",
+              "position": [
+                -3.25534725189209,
+                1.8726609945297241,
+                -2.7637908458709717
+              ],
+              "quaternion": [
+                -0.5000174045562744,
+                -0.4999825954437256,
+                -0.4999825954437256,
+                0.5000174045562744
+              ],
+              "scale": [
+                0.9904176592826843,
+                0.9904176592826843,
+                0.9904176592826843
+              ],
+              "children": [],
+              "mesh": "models/environment/trophy-snooker.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "wallBuffer",
+              "position": [
+                0.99013751745224,
+                0.9591125249862671,
+                2.561061382293701
+              ],
+              "quaternion": [
+                -0.5000001192092896,
+                0.4999999403953552,
+                0.4999999403953552,
+                0.5000001192092896
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/wall-buffer.obj",
+              "materials": [
+                {
+                  "name": "wallPanelMaterial",
+                  "shader": "sm/metal",
+                  "floats": {
+                    "<noninit>": 1.9600000381469727,
+                    "amount": 6.869999885559082,
+                    "fresnelAmount": 1.0,
+                    "fresnelFocus": 0.029999999329447746,
+                    "mainAmount": 0.6600000262260437
+                  },
+                  "texture": "textures/scene/wall-panel-material-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "metal"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "wallBufferUnlit",
+              "position": [
+                0.99013751745224,
+                0.9591125249862671,
+                2.561061382293701
+              ],
+              "quaternion": [
+                -0.5000001192092896,
+                0.4999999403953552,
+                0.4999999403953552,
+                0.5000001192092896
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/wall-buffer-unlit.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "wallBrandPanel",
+              "position": [
+                4.122495174407959,
+                1.0424631834030151,
+                1.8187249898910522
+              ],
+              "quaternion": [
+                -0.10917101800441742,
+                -0.6986284852027893,
+                0.10917096585035324,
+                0.6986284852027893
+              ],
+              "scale": [
+                0.6427273750305176,
+                0.6427273750305176,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/wall-brand-panel.obj",
+              "materials": [
+                {
+                  "name": "wallBrandMaterial",
+                  "shader": "sm/metal",
+                  "floats": {
+                    "<noninit>": 1.9600000381469727,
+                    "amount": 1.5299999713897705,
+                    "fresnelAmount": 0.8399999737739563,
+                    "fresnelFocus": 0.029999999329447746,
+                    "mainAmount": 0.8500000238418579
+                  },
+                  "texture": "textures/scene/wall-panel-material-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "metal"
+                }
+              ],
+              "floorSurface": false
+            },
+            {
+              "name": "wallBrandPanelUnlit",
+              "position": [
+                4.122495174407959,
+                1.0424631834030151,
+                1.8187249898910522
+              ],
+              "quaternion": [
+                -0.10917096585035324,
+                -0.6986284852027893,
+                0.10917100310325623,
+                0.6986284852027893
+              ],
+              "scale": [
+                0.6427273750305176,
+                0.6427273750305176,
+                1.0
+              ],
+              "children": [],
+              "mesh": "models/environment/wall-brand-panel-unlit.obj",
+              "materials": [
+                {
+                  "name": "roomFurniture",
+                  "shader": "sm/unlit",
+                  "floats": {
+                    "amount": 0.14000000059604645,
+                    "bumpScale": 1.0,
+                    "cutoff": 0.5,
+                    "detailNormalMapScale": 1.0,
+                    "diffuseAmount": 0.3700000047683716,
+                    "dstBlend": 0.0,
+                    "fresnelAmount": 0.8700000047683716,
+                    "fresnelFocus": 0.029999999329447746,
+                    "gloss": 0.5400000214576721,
+                    "glossMapScale": 1.0,
+                    "glossiness": 0.49000000953674316,
+                    "glossyReflections": 1.0,
+                    "mainAmount": 1.0,
+                    "metallic": 0.3799999952316284,
+                    "mode": 0.0,
+                    "occlusionStrength": 1.0,
+                    "parallax": 0.019999999552965164,
+                    "reflAmount": 1.0,
+                    "smoothnessTextureChannel": 0.0,
+                    "specular": 0.20999999344348907,
+                    "specularHighlights": 1.0,
+                    "srcBlend": 1.0,
+                    "uvsec": 0.0,
+                    "unlitAmount": 1.0,
+                    "zwrite": 1.0
+                  },
+                  "texture": "textures/scene/room-furniture-color.png",
+                  "repeat": [
+                    1.0,
+                    1.0
+                  ],
+                  "offset": [
+                    0.0,
+                    0.0
+                  ],
+                  "render": {
+                    "surface": null,
+                    "groundOverlay": false,
+                    "decal": false,
+                    "net": false,
+                    "cloth": false,
+                    "gold": false,
+                    "environmentAlpha": false,
+                    "unlit": false,
+                    "castShadow": true
+                  },
+                  "shadingModel": "basic"
+                }
+              ],
+              "floorSurface": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": "v12-042-compact",
+  "parentVersion": "v12-031-review",
+  "sourceRevision": "78a2d1449e31f21000461530714e420e965d89b45e560ea9c6b4fa20991a264b",
+  "offlineChanges": [
+    "seat decimation through Blender MCP, stairs and UVs preserved",
+    "whole-floor two-layer shadow rebake, outer penumbra 35cm",
+    "display-ready carpet RGBA8",
+    "RGB9_E5 HDR plus R8 roughness",
+    "97-cubed hardware-filtered background display LUT",
+    "lossless gzip geometry transfer",
+    "background reflection probes 256 to 128; table local leg reflection unchanged",
+    "retired hidden legacy table/floor materials not loaded",
+    "Correct seat custom normals from face planes; no new triangles or runtime shading"
+  ],
+  "files": {
+    "compact-reflections.json": "65cc5568e6a609c418b84321064ebfe8821504b4ad07fadff95ee6b50a92b841",
+    "dense-display.bin.gz": "844d5b980970fbc8d8f5ee8a4178ada5d4b7d26142cf5526a9fc0ec06a11d33d",
+    "floor-display.bin.gz": "e8b84a883cd8861eef1617ecc6d3e7aa5a5c717ac43cfe9a4227e7c6678f1a7b",
+    "glass-vertex-venue.glb.gz": "e3deb6e79947f0228fa4e19221b3be32790b54efe39c49575f8c2132e6d65c4f",
+    "irradiance-architecture.rgb9e5.bin.gz": "77c776661fcc02eb7b3680ef7fe1657df5bd65bd1d42f12871657645c67d9f4c",
+    "irradiance-architecture.roughness.r8.bin.gz": "80dd9e8246af9381db988c1df900d0c90b7b7257b6cb584b0654bff4a39b4331",
+    "irradiance-players.rgb9e5.bin.gz": "2384728b826d3a634caf05fa7c46260d09c585989f1cf3a210e970cfe6333665",
+    "irradiance-players.roughness.r8.bin.gz": "df9622bb8a206b6a9680e7aded624fed9334c81aa717ebc05d0c35ce3f878e73",
+    "irradiance-rigging-linear.exr": "5ab1a9962f09ce1bd45d3d8c6a58ca7b2b8ee3d2b6df299e6b7d2fc963831cbd",
+    "irradiance-stands-linear.exr": "3a2ca9a34a57793b142a2d370b2b134687c76ac916b4d3a52b51c9a89ee7293f",
+    "lightmapped-venue-single-scene.glb.gz": "50a200074b200fe5e475800c27eee28d4ee7cc66d80f6b603039bd3b3e8e08d2",
+    "native-dielectric-response.rgba16f.bin.gz": "898d20dda336ece4d0e4741cfae71fa3917c392ac8d358b77a1fc8bc3c702ee9",
+    "native-diffuse-energy-E.bin": "c45d28cd1374f984986e5c320e6494b3dfa9169c7e97c6f0e21ef7f3eff2e6b3",
+    "native-diffuse-energy-Eavg.bin": "21e4e2e6f2ad407982ba355010e5860a8c839b164318466998a549c586713636",
+    "native-diffuse-energy-S.bin": "481d35d9db60c5ac0bb4f980ea048d5ef3571ea19c2f3e6dab0843acadd2219b",
+    "native-diffuse-energy.json": "b2e7b8499f6f0bc46e707eff1cd6d409edc5c36a097dfe01edbf939dd2073855",
+    "native-display-linear.rgba16f.bin.gz": "7e8d03ac0577ccc3ecd04e398a4e936c026b958d44db5ff40a84763e14b7914b",
+    "native-lightmap-encoding.json": "917c9dd6b3827ebd1df91cc3f8dad532f64102cafd796a2ff59b41f2c0630d30",
+    "packed-lightmaps.json": "62fa9e18573fb28b9c776a8fc25dd337496b3e5df7f68e3ff6deb2356f5ecc20",
+    "table-body-manifest.json": "e09617ca6bd8b735d65f38716b7c38cea109e3518be262ca32f68f081299df0d",
+    "table-body-normal.rgba8.bin.gz": "6affee59162d4cc29bfcf0e18d5823ae5a7e81792580f4642d6f832354c11b0e",
+    "table-body.glb.gz": "1e01d786966391ff3f244059734c1eb2a2ff3d29a82bad11c5cded17118c4a01",
+    "table-body.rgb9e5.bin.gz": "04d29c4689cbf452a4fa845d26eb679935ac03434600b5a23060f65f63921607",
+    "table-reflections.bin.gz": "793440309f32284ef6dd0e4c13f5edd7382b5bf3a772ccf68ee402b5fbee5f09",
+    "thin-vertex-venue.glb.gz": "b811561a1bc84ecb468828e65f6afee29a56d2497c96f14a54aa66545a5c6867",
+    "venue-reflections-128.bin.gz": "51b9af99c40f6d8348b098011333e67ff55e6b38d34d40ca4d64188da19ea2e6",
+    "whole-floor-bake.json": "5eb9b9ab8f83cebec10eb51cd37f8ec491b591e825388e3aaf70971afee2df40",
+    "table-body.rgb9e5-q5-paeth.bin.gz": "9e7e21f68cfd4cd389bc99ca6d6d8aab3eb5025aba86269c40871edad8726fe2"
+  },
+  "floorShadow": {
+    "outerDepthMultiplier": 5,
+    "extensionMeters": 0.35,
+    "mainAreaRatio": 1.05,
+    "sourceLightShareWatts": 164.467,
+    "rebaked": true,
+    "runtimeCostUnchanged": true
+  },
+  "seatNormalCorrection": {
+    "triangles": 20090,
+    "reversedCornersBefore": 3203,
+    "reversedCornersAfter": 0,
+    "geometryAndUVsExact": true,
+    "blenderMCP": true
+  }
+}

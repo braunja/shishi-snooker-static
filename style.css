@@ -1,0 +1,163 @@
+.auth-dialog{position:fixed;width:360px;max-width:calc(100vw - 32px);border:1px solid #ffffff30;border-radius:14px;background:#17221f;color:#fff;padding:24px;overflow:visible}.auth-dialog::backdrop{background:#0008}.auth-dialog h2{text-align:center;font-size:22px;margin:0 0 20px}.auth-dialog label{display:flex;flex-direction:column;margin:12px 0;gap:6px}.auth-dialog input{font:inherit;width:100%;min-width:0;height:44px;border-radius:6px;background:#0e1714;color:white;border:1px solid #69746e;padding:0 10px;outline:none}.auth-dialog input:focus{border-color:#168449}.auth-code-row{display:flex;gap:8px}.auth-code-row button{width:112px;flex-shrink:0}.auth-dialog .auth-submit{width:100%;margin-top:10px}.auth-dialog .auth-error{font-size:12px;color:#ff7786}.auth-dialog small{display:block;color:#a9b6ae;font-size:12px;margin-top:12px}.auth-dialog .auth-close{position:absolute;right:-12px;top:-12px;background:#c43547;width:32px;height:32px;min-width:32px;min-height:32px;border-radius:50%;font-size:25px;line-height:1;padding:0;display:grid;place-items:center}
+/* Product viewport uses the approved logical canvas, without the prototype navigator. */
+:root{--product-safe-top:env(safe-area-inset-top,0px);--product-safe-right:env(safe-area-inset-right,0px);--product-safe-bottom:env(safe-area-inset-bottom,0px);--product-safe-left:env(safe-area-inset-left,0px)}html,body{width:100%;height:100%;overflow:hidden;overscroll-behavior:none;background:#080d10;touch-action:pan-x pan-y}body{position:fixed;inset:0;margin:0}#stage{position:fixed;inset:0;width:100%;height:100%;margin:0;border:0;background:#080d10;touch-action:pan-x pan-y}#screen{position:absolute;transform-origin:top left}#game{height:100%}#app{height:100%;display:flex;flex-direction:column}#app>.home{position:relative;flex:1;min-height:0;background:none}#app>.page{height:100%}#screen .topbar .identity{display:flex;align-items:center;gap:7px}#screen .wallet-display{display:flex;align-items:center}#screen .home .mode-nav button{background-size:cover}#screen .page-header strong{margin:0}#screen .gear-content img{object-fit:contain}#screen .page-back-icon{min-width:44px}#screen .topbar button{min-width:0}#screen .topbar .ui-icon{margin-right:7px}#screen .network{margin-left:auto}#screen .home-activities .activity small{white-space:nowrap}
+.field-error{color:#f08086;font-size:13px;font-weight:400}.required{color:#f08086}
+#screen [data-avatar-error]:empty{display:none}
+#screen .gear-detail-tier{font-size:14px}
+#screen .equipment-dialog .field-error:empty{display:none}
+#screen .profile-panel [data-settings-error]:empty{display:none}
+/* Keep personal nickname validation beside its label without adding a row. */
+#screen .profile-panel .nickname-heading{display:flex;align-items:center;gap:8px;min-height:21px}
+#screen .profile-panel .game-settings-panel>.row:not(:has(~ .row)){border-bottom:0}
+#screen .profile-panel .nickname-heading label{width:auto;margin:0;flex:0 0 auto}
+#screen .profile-panel .nickname-heading .field-error{margin:0;min-width:0}
+/* Unregistered lobby uses the same compact login region as the prototype. */
+#screen.portrait .topbar:has(.identity[data-login]) .identity{grid-column:span 8}
+/* Two compact header lines leave the remaining page to the 3D viewport. */
+#screen .cue-detail-page{height:100%;display:flex;flex-direction:column;min-height:0;padding:12px 16px}
+#screen .cue-detail-header{display:flex;flex-direction:column;align-items:stretch;gap:4px;height:auto;min-height:0;flex-shrink:0;margin:0;padding:0 0 8px;border:0}
+#screen .cue-header-row{display:flex;align-items:center;gap:10px;min-width:0}
+#screen .cue-header-row .page-back-icon{flex:none;width:34px;height:34px;min-height:34px;padding:5px}
+#screen .cue-detail-info{flex:1;min-width:0;display:flex;align-items:center;gap:12px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+#screen .cue-detail-info::-webkit-scrollbar{display:none}
+#screen .cue-detail-page h1{font-size:18px;margin:0;flex:none;line-height:1.2}
+#screen .cue-detail-info>.gear-tier-tag{font-size:12px;flex:none}
+#screen .cue-power,#screen .cue-price{font-size:13px;flex:none;color:#b3bfcc}
+#screen .cue-power b{color:#a4dfbc}
+#screen .cue-price .coin-amount{display:inline-flex;font-size:14px}
+#screen .cue-price .coin-icon{width:18px;height:18px}
+#screen .cue-detail-info .gear-card-actions{display:flex;flex-direction:row;gap:6px;margin-left:auto;flex:none}
+#screen .cue-detail-info .gear-card-actions button{font-size:13px;min-height:32px;padding:5px 11px;min-width:58px}
+#screen .cue-description{font-size:12px;line-height:1.4;margin:0;color:#b3bfcc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:44px}
+#screen .cue-action-error{margin:0;color:#ffb3ad;font-size:12px}
+#screen .cue-action-error:empty{display:none}
+#screen .cue-detail-layout{flex:1;min-height:0;display:flex;padding:0}
+#screen .cue-view-panel{flex:1;min-width:0;min-height:0;display:flex;background:#101a24;border:1px solid #ffffff20;border-radius:10px;overflow:hidden}
+#screen .cue-view-stage{position:relative;flex:1;min-height:100px;overflow:hidden;background:radial-gradient(ellipse at center,#293c49,#101a24 75%)}
+#screen .cue-view-hint{position:absolute;right:14px;bottom:12px;z-index:1;margin:0;color:rgba(255,255,255,.85);font-size:12px;line-height:1.5;text-shadow:0 1px 3px rgba(0,0,0,.65);pointer-events:none;user-select:none}
+#screen .cue-view-stage canvas{width:100%;height:100%;display:block;touch-action:none;outline-offset:-4px}
+#screen .cue-view-status{position:absolute;inset:40% 0 auto;text-align:center;color:#cbd6df;pointer-events:none}
+#screen.portrait .cue-detail-page{padding:10px}
+#screen.portrait .cue-detail-info{gap:8px}
+#screen.portrait .cue-detail-page h1{font-size:16px}
+
+#screen .cue-detail-info .gear-card-actions{width:auto;flex:0 0 auto;max-width:none}
+#screen .cue-detail-info .gear-card-actions>button{width:auto;flex:0 0 auto;margin:0;max-width:none}
+
+/* Upgrade prices use the shared currency icon and fit their full label. */
+#screen .gear-card-actions button .coin-icon,#screen .equipment-dialog button .coin-icon{width:16px;height:16px}
+#screen .gear-card-actions button .coin-amount{font-size:inherit}
+#screen .gear-long-heading .gear-card-actions>button[data-upgrade]{width:auto;min-width:0;flex:0 0 auto;padding:0 8px}
+
+/* Equipment overview: two wide pieces, then two rows of three accessories. */
+#screen .gear-overview-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+#screen .gear-overview-item{grid-column:span 2;min-width:0;min-height:96px;gap:5px;padding:8px}
+#screen .gear-overview-item.gear-overview-long{grid-column:span 3}
+#screen .gear-overview-item .gear-art{height:42px}
+#screen .gear-overview-long .gear-art{height:56px}
+
+/* Static 2:1 inspection photographs fill the full width of square cue cards. */
+#screen .gear-grid.gear-cue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+#screen .gear-grid.gear-cue-grid .gear-card{aspect-ratio:1;min-width:0;gap:3px;padding:0 8px 8px;justify-content:space-between;overflow:hidden}
+#screen .gear-grid.gear-cue-grid .gear-preview{flex:1;min-height:0;width:calc(100% + 16px);align-self:center;gap:4px}
+#screen .gear-grid.gear-cue-grid .gear-art{width:100%;height:auto;aspect-ratio:2;min-height:0;flex:none;object-fit:cover;object-position:center;filter:none;border-radius:0}
+#screen .gear-grid.gear-cue-grid .gear-name-line{flex:1;width:calc(100% - 16px);justify-content:center;min-height:24px;line-height:1.3;gap:4px}
+#screen .gear-grid.gear-cue-grid .gear-name-line strong{font-size:12px;text-align:center}
+#screen .gear-grid.gear-cue-grid .gear-card-actions{flex:none}
+#screen.portrait .gear-grid.gear-cue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* Overview cue cutouts retain studio lighting without the inspection worktop. */
+#screen .equipment-overview-page .gear-overview-item .gear-art[data-equipment-category="0"]{filter:none;width:calc(100% + 16px);max-width:none;align-self:center}
+
+/* Small overview accessories leave more room around the product. */
+#screen .equipment-overview-page .gear-overview-item .gear-art:is([data-equipment-category="2"],[data-equipment-category="3"],[data-equipment-category="4"]){transform:scale(.8);transform-origin:center}
+
+/* Transparent model crop fills the width; the shaft continues into a soft edge fade. */
+#screen .equipment-overview-page .gear-overview-item{--overview-card-inset:8px}
+#screen.portrait .equipment-overview-page .gear-overview-item{--overview-card-inset:5px}
+#screen .equipment-overview-page .overview-cue-art{display:block;position:relative;flex:1;min-height:0;width:calc(100% + var(--overview-card-inset)*2);align-self:center;overflow:hidden;-webkit-mask-image:linear-gradient(to right,#000 0%,#000 90%,transparent 100%);mask-image:linear-gradient(to right,#000 0%,#000 90%,transparent 100%)}
+#screen .equipment-overview-page .overview-cue-art .gear-art[data-equipment-category="0"]{position:absolute;left:-1.5%;top:50%;width:110%;height:auto;max-width:none;max-height:none;flex:none;transform:translateY(-50%);filter:none}
+
+/* Keep mode titles crisp at the final UI zoom; avoid a wide soft halo. */
+#screen .home .mode-nav button:nth-child(n){text-shadow:0 1px 1px #0005}
+
+/* Paint chrome to the display edges; only its interactive contents use insets.
+   Insets are converted once to the logical canvas units by ProductViews. */
+#screen>#game{box-sizing:border-box;padding:var(--ui-safe-top,0px) var(--ui-safe-right,0px) var(--ui-safe-bottom,0px) var(--ui-safe-left,0px)}
+#screen #app>.topbar{box-sizing:border-box;flex-shrink:0;width:calc(100% + var(--ui-safe-left,0px) + var(--ui-safe-right,0px));margin-left:calc(-1 * var(--ui-safe-left,0px));margin-top:calc(-1 * var(--ui-safe-top,0px));height:calc(48px + var(--ui-safe-top,0px));min-height:calc(48px + var(--ui-safe-top,0px));padding:var(--ui-safe-top,0px) var(--ui-safe-right,0px) 0 var(--ui-safe-left,0px)}
+#screen.portrait #app>.topbar{height:calc(100px + var(--ui-safe-top,0px));min-height:calc(100px + var(--ui-safe-top,0px))}
+
+/* Match the painted lobby to the measured iOS viewport, including its bottom edge. */
+body,#stage{width:var(--product-viewport-width,100%);height:var(--product-viewport-height,100%)}
+/* The online strip floats; portrait actions no longer reserve a right-hand column. */
+#screen.portrait .home .mode-nav{left:24px;right:24px;top:42%;height:34%}
+#screen.portrait .home-activities{left:24px;right:24px;justify-content:center}
+
+/* Secondary pages paint the viewport while controls retain their safe-area positions. */
+#stage:has(#app>.page)::after{content:'';position:absolute;inset:0;background:#101720;z-index:-1;pointer-events:none}
+#screen #app>.page{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+html,body,#stage{height:var(--product-viewport-height,100%)}
+
+/* Equipment details reserve the full remaining panel for an uncropped object. */
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog{width:620px;display:flex;flex-direction:column;height:440px;min-height:0}
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog .dialog-head{display:flex;align-items:center;gap:12px;flex:none;min-width:0;padding-bottom:4px}
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog .dialog-body{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;gap:6px;padding-top:6px;padding-bottom:0}
+#screen .equipment-detail-dialog .dialog-head h2{flex:none;min-width:0;max-width:42%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:17px;margin:0}
+#screen .equipment-detail-dialog .gear-detail-summary{display:flex;align-items:center;gap:8px;min-width:0;flex:1;white-space:nowrap;font-size:12px}
+#screen .equipment-detail-dialog .gear-detail-tier{flex:none}
+#screen .equipment-detail-dialog .gear-detail-power{color:#b3bfcc;min-width:0}
+#screen .equipment-detail-dialog .gear-detail-power b{color:#a4dfbc}
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog .gear-detail-price{margin:0 0 0 auto;flex:none}
+#screen .equipment-detail-dialog .gear-description{margin:0;flex:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;line-height:1.5}
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog .gear-detail-art{display:flex;align-items:center;justify-content:center;flex:1;min-height:0;height:auto;min-width:0;margin:0;padding:12px;overflow:hidden}
+#screen #overlay[data-drawer=gear-detail] .equipment-detail-dialog .gear-detail-art .gear-art{display:block;flex:none;width:100%;height:100%;min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain;transform:none}
+#screen .equipment-detail-dialog .dialog-footer{flex:none}
+#screen.portrait #overlay[data-drawer=gear-detail] .equipment-detail-dialog{width:500px;height:800px}
+#screen.portrait #overlay[data-drawer=gear-detail] .equipment-detail-dialog .gear-detail-art{padding:18px}
+
+/* The icon-only message entry does not need the text-icon spacing or offset. */
+#screen .topbar>.message-entry .game-illustration-icon{margin:0;transform:none;display:block}
+
+/* Filing information belongs only to the versus product lobby. */
+#screen .home .site-filings{position:fixed;left:16px;right:16px;bottom:5px;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;column-gap:18px;row-gap:2px;margin:0;padding:0;font-size:6px;line-height:9px;text-align:center;color:rgba(0,0,0,.5);text-shadow:none;z-index:1}
+#screen .home .site-filings,#screen .home .site-filings span{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:default}
+#screen .home .site-filings span{color:inherit;white-space:nowrap}
+#screen.portrait .home .site-filings{bottom:8px;column-gap:14px}
+
+/* Keep lobby controls below the iOS fullscreen status-bar treatment. */
+html[data-product-iphone-topbar-clearance] #screen.portrait #app>.topbar{height:calc(100px + var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px));min-height:calc(100px + var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px));padding-top:calc(var(--ui-safe-top,0px) + var(--ui-topbar-clearance,0px))}
+
+/* Ranked entry: keep the current season beside the title, wrapping on narrow screens. */
+#screen .ranked-heading{display:flex;align-items:baseline;flex:1;min-width:0;flex-wrap:wrap;gap:4px 16px}
+#screen .ranked-heading h1{flex:0 0 auto;margin:0}
+#screen .ranked-season{font-size:15px;font-weight:400;color:#b8c4bd;line-height:1.5;font-variant-numeric:tabular-nums}
+#screen.portrait .ranked-heading{gap:2px 10px}
+#screen.portrait .ranked-season{font-size:12px}
+/* Keep the balance immediately before both ranked entry actions. */
+#screen .ranked-header-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex:0 0 auto;margin-left:auto}
+#screen .ranked-header-actions .standard-action{min-width:88px;width:auto;white-space:nowrap;padding:8px 12px}
+#screen .ranked-header-actions .available-coins{margin-right:4px}
+#screen.portrait .ranked-page>.page-header{flex-wrap:wrap}
+#screen.portrait .ranked-header-actions{flex-basis:100%;gap:10px}
+#screen #overlay[data-drawer="season-rules"]{padding:32px}
+#screen #overlay[data-drawer="season-rules"] .dialog{width:480px;max-width:100%;max-height:min(420px,100%);min-height:0;box-sizing:border-box}
+#screen #overlay[data-drawer="season-rules"] .dialog-head{flex:0 0 auto;min-height:0;padding:16px 24px 8px}
+#screen #overlay[data-drawer="season-rules"] .dialog-head h2{margin:0;font-size:20px;line-height:1.4}
+#screen #overlay[data-drawer="season-rules"] .dialog-body{flex:1 1 auto;min-height:0;padding:0 24px 16px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+#screen .season-rules-content{font-size:14px;line-height:1.5}
+#screen .season-rules-content h3{font-size:15px;margin:12px 0 4px}
+#screen .season-rules-content h3:first-child{margin-top:0}
+#screen .season-rules-content p{margin:4px 0}
+#screen .season-rules-content .season-rules-note{font-size:12px;line-height:1.5}
+#screen .season-rules-rewards{width:100%;margin:4px 0}
+#screen .season-rules-rewards td{padding:5px 8px;font-size:14px}
+#screen .season-rules-rewards td:last-child{text-align:right}
+/* Only the historical standings scroll; own rank and the season action stay below. */
+#screen .season-review-page>.page-content{min-height:0;overflow:hidden}
+#screen .season-review-footer{flex:0 0 auto;display:flex;flex-direction:column;gap:10px}
+#screen .season-review-footer>[data-start-season]{align-self:stretch;width:100%;min-width:0;margin:0}
+#screen .season-review-reward{margin:0;text-align:center;font-size:12px;color:#b8c4bd}
+#screen .season-review-page .board-table td{height:54px}
+#screen .review-rank-tie{display:block;font-size:10px;line-height:12px}
+#screen .season-review-page .review-rank-tie+.rank-medal{height:30px;width:28px}
+#screen.portrait .season-review-footer{gap:8px}

@@ -1,0 +1,497 @@
+{
+  "mesh": "models/balls/ball-sphere.obj",
+  "materials": {
+    "ballBlack": {
+      "textures": {
+        "baseMap": "textures/balls/black-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.100000023841858,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.49000000953674316,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballBlue": {
+      "textures": {
+        "baseMap": "textures/balls/blue-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.100000023841858,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.2199999988079071,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballBrown": {
+      "textures": {
+        "baseMap": "textures/balls/brown-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.100000023841858,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.2199999988079071,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballGreen": {
+      "textures": {
+        "baseMap": "textures/balls/green-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.0,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.27000001072883606,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballPink": {
+      "textures": {
+        "baseMap": "textures/balls/pink-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.8235294222831726,
+          0.1937716156244278,
+          0.3729269802570343,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ],
+        "specularColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.100000023841858,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.699999988079071,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballRed": {
+      "textures": {
+        "baseMap": "textures/balls/red-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          1.0,
+          0.044117629528045654,
+          0.044117629528045654,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ],
+        "specularColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.149999976158142,
+        "ambientLightness": 0.009999999776482582,
+        "ambientLow": 0.20999999344348907,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballWhite": {
+      "textures": {
+        "baseMap": "textures/balls/white-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.149999976158142,
+        "ambientLightness": 0.009999999776482582,
+        "ambientLow": 0.07999999821186066,
+        "amount": 0.6499999761581421,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": -0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    },
+    "ballYellow": {
+      "textures": {
+        "baseMap": "textures/balls/yellow-ball.png"
+      },
+      "colors": {
+        "boundsMax": [
+          2.0578525066375732,
+          9.456944465637207,
+          1.4020013809204102,
+          0.0
+        ],
+        "boundsMin": [
+          -2.0833475589752197,
+          5.164943695068359,
+          -1.4979987144470215,
+          0.0
+        ],
+        "color": [
+          0.09803921729326248,
+          0.13333334028720856,
+          0.8392156958580017,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          -0.01274745911359787,
+          7.310944080352783,
+          -0.047998640686273575,
+          0.0
+        ]
+      },
+      "floats": {
+        "ambientHeight": 1.100000023841858,
+        "ambientLightness": 0.2199999988079071,
+        "ambientLow": 0.2199999988079071,
+        "amount": 1.340000033378601,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.6200000047683716,
+        "fresnelFocus": 0.2199999988079071,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.0,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "zwrite": 1.0
+      }
+    }
+  }
+}

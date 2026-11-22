@@ -1,0 +1,40 @@
+/* Product practice retains the renderer's native footer controls; only its native
+   fullscreen/FPS chrome uses the approved logical-canvas sizing and palette. */
+/* Keep the initial loader and bootstrap-failure fallback on the same product
+   background as the shared practice/friend/ranked loading overlay. */
+#loading.loading{isolation:isolate;background:#0c161e!important}
+#loading.loading::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at center,#153c36,#0c161e 70%);filter:none}
+#trial-fullscreen{top:calc(var(--product-safe-top,env(safe-area-inset-top,0px)) + 10px * var(--product-ui-scale,1));right:max(calc(14px * var(--product-ui-scale,1)),var(--product-game-safe-horizontal,0px),env(safe-area-inset-left,0px),env(safe-area-inset-right,0px));width:calc(var(--product-fullscreen-size,44px) * var(--product-ui-scale,1))!important;height:calc(var(--product-fullscreen-size,44px) * var(--product-ui-scale,1))!important;background:#0005!important;border:1px solid #ffffff38;border-radius:6px;color:#fff;box-shadow:none}
+/* The loading gate hides the button while the mobile HUD measures its box. */
+:root[data-product-mobile-controls] #viewer.is-loading #trial-fullscreen{display:grid}
+#trial-fps{top:calc(var(--product-safe-top,env(safe-area-inset-top,0px)) + 10px * var(--product-ui-scale,1));right:calc(max(calc(14px * var(--product-ui-scale,1)),var(--product-game-safe-horizontal,0px),env(safe-area-inset-left,0px),env(safe-area-inset-right,0px)) + (var(--product-fullscreen-size,44px) + 12px) * var(--product-ui-scale,1));height:calc(var(--product-fullscreen-size,44px) * var(--product-ui-scale,1));font-size:calc(12px * var(--product-ui-scale,1));color:#fff}
+
+button:not(:disabled):active:not([data-product-press="cancelled"]),summary:active:not([data-product-press="cancelled"]),[role=button]:active:not([data-product-press="cancelled"]){filter:brightness(.65)}
+
+#trial-fullscreen svg{background-image:url(/assets/icons/clear-illustrated-atlas.png)!important;background-size:931.25% auto!important;background-position:57.001880% 37.269193%!important;background-repeat:no-repeat!important;-webkit-mask:none!important;mask:none!important}
+#trial-fullscreen svg>*{visibility:hidden}
+
+/* Match/lobby routes share the same safe-area and browser gesture policy. */
+:root{--product-safe-top:env(safe-area-inset-top,0px);--product-safe-right:env(safe-area-inset-right,0px);--product-safe-bottom:env(safe-area-inset-bottom,0px);--product-safe-left:env(safe-area-inset-left,0px)}
+html,body{overscroll-behavior:none;background-color:#080d10;touch-action:pan-x pan-y}
+
+/* Use the same measured viewport for direct room entry and embedded rooms. */
+html,body,#viewer{width:100%;height:var(--product-viewport-height,100%)}
+.product-practice-picker-glass{position:fixed;z-index:5;pointer-events:none;background:rgba(9,22,30,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+
+/* Keep top-row controls below iOS's native status-bar fade. The scene still
+   fills the screen; its camera, viewport and bottom scoreboard are unchanged. */
+:root[data-product-iphone-topbar-clearance] :is(.product-topbar,.product-topbar-notices){transform:translateY(var(--product-iphone-topbar-clearance,0px))}
+
+/* Native practice chrome shares the white game icon palette. */
+#trial-fullscreen svg,#trial-settings svg{background-image:none!important;color:#fff}
+#trial-fullscreen svg>*,#trial-settings svg>*{visibility:visible!important;stroke:#fff}
+
+/* Enlarge mobile hit targets without scaling their surrounding gaps. */
+:root[data-product-mobile-controls]{--product-fullscreen-size:52.8px}
+
+/* Native practice controls share the product borderless treatment. */
+button,[role=button],summary,.practice-replay-dialog,.replay-share-dialog{border:0!important}
+
+/* Keep the camera joystick at its original size while the tip pad grows. */
+#viewer[data-product-side-controls] .observation-joystick{left:var(--product-joystick-left)!important;top:var(--product-joystick-top)!important;width:var(--product-joystick-size)!important;height:var(--product-joystick-size)!important}

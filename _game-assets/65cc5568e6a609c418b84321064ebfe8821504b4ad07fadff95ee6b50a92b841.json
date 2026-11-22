@@ -1,0 +1,132 @@
+{
+  "size": 32,
+  "groups": 3,
+  "probes": [
+    {
+      "id": 0,
+      "position": [
+        -1.6925541162490845,
+        0.2800000011920929,
+        -0.7792725563049316
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged",
+      "group": 1,
+      "mirror": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        -1.6925541162490845,
+        0.2800000011920929,
+        0.7682917714118958
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.001",
+      "group": 1,
+      "mirror": [
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        -0.5716928839683533,
+        0.2800000011920929,
+        -0.7792725563049316
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.002",
+      "group": 2,
+      "mirror": [
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 3,
+      "position": [
+        -0.5716928839683533,
+        0.2800000011920929,
+        0.7682917714118958
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.003",
+      "group": 2,
+      "mirror": [
+        -1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "position": [
+        0.5687701106071472,
+        0.2800000011920929,
+        -0.7792725563049316
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.004",
+      "group": 2,
+      "mirror": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 5,
+      "position": [
+        0.5687701106071472,
+        0.2800000011920929,
+        0.7682917714118958
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.005",
+      "group": 2,
+      "mirror": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "position": [
+        1.6894419193267822,
+        0.2800000011920929,
+        -0.7792725563049316
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.006",
+      "group": 1,
+      "mirror": [
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": 7,
+      "position": [
+        1.6894419193267822,
+        0.2800000011920929,
+        0.7682917714118958
+      ],
+      "sourceLeg": "\u771f\u5b9e\u6e38\u620f\u7403\u684c \u00b7 Gold leg / merged.007",
+      "group": 1,
+      "mirror": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "bytes": 97172,
+  "encoding": "linear-rgba-half-float-le",
+  "source": "v12-006",
+  "inwardFloorRedRadianceGainMax": 3.0,
+  "bodyEnvironmentUnchanged": true,
+  "baseLightingUnchanged": true
+}

@@ -1,0 +1,354 @@
+{
+  "name": "floorRoot",
+  "position": [
+    0,
+    0,
+    0
+  ],
+  "quaternion": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "children": [
+    {
+      "name": "arenaGroup",
+      "position": [
+        -6.550606727600098,
+        -1.4689090251922607,
+        -6.851635932922363
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "floor",
+          "position": [
+            6.462695121765137,
+            1.4709089994430542,
+            8.05924129486084
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.161747932434082,
+            1.161747932434082,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor.obj",
+          "materials": [
+            {
+              "name": "floorCarpet",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 3.0,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "detailsLighten": 0.33000001311302185,
+                "detailsPow": 2.5999999046325684,
+                "detailsPow2": 2.799999952316284,
+                "diffuseAmount": 1.0,
+                "dstBlend": 0.0,
+                "fresnelAmount": 1.0,
+                "fresnelFocus": 0.009999999776482582,
+                "fresnelReflection": 0.10000000149011612,
+                "fresnelReflectionIntensity": 0.949999988079071,
+                "gloss": 0.10999999940395355,
+                "glossiness": 0.5,
+                "mainAmount": 0.029999999329447746,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "roughness": 0.27000001072883606,
+                "specular": 0.10999999940395355,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.8999999761581421,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-carpet-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        }
+      ]
+    },
+    {
+      "name": "tableGroup",
+      "position": [
+        -0.9108546376228333,
+        0.8238086700439453,
+        0.18565289676189423
+      ],
+      "quaternion": [
+        -0.7071068286895752,
+        0.0,
+        0.0,
+        0.7071068286895752
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "floorTableLight",
+          "position": [
+            0.8229430317878723,
+            -1.0219526290893555,
+            -0.7427178621292114
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-table-light.obj",
+          "materials": [
+            {
+              "name": "floorBakedLight",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.6899999976158142,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "gloss": 0.078125,
+                "glossiness": 0.5,
+                "invFade": 0.699999988079071,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.078125,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlit": 1.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-baked-light-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        },
+        {
+          "name": "floorTableShadow",
+          "position": [
+            0.8229430317878723,
+            -1.021952509880066,
+            -0.8127181529998779
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-table-shadow.obj",
+          "materials": [
+            {
+              "name": "floorTableShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 1.0,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-table-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        },
+        {
+          "name": "floorLegsShadow",
+          "position": [
+            0.8229430317878723,
+            -1.021952509880066,
+            -0.802717924118042
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-legs-shadow.obj",
+          "materials": [
+            {
+              "name": "floorLegShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.36000001430511475,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-leg-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        }
+      ]
+    }
+  ]
+}

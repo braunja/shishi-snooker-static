@@ -1,0 +1,1372 @@
+{
+  "materials": {
+    "floorMarble2": {
+      "name": "floorMarble2",
+      "shader": "sm/metal",
+      "floats": {
+        "<noninit>": 8.739999771118164,
+        "amount": -0.10999999940395355,
+        "fresnelAmount": 0.5099999904632568,
+        "fresnelFocus": 0.009999999776482582,
+        "mainAmount": 0.0
+      },
+      "colors": {
+        "<noninit>": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          8.291508674621582,
+          6.473178863525391,
+          9.439908981323242,
+          0.0
+        ],
+        "boundsMin": [
+          -8.299098014831543,
+          -0.026439428329467773,
+          -9.572416305541992,
+          0.0
+        ],
+        "probePosition": [
+          -0.003795105032622814,
+          3.223369836807251,
+          -0.066253662109375,
+          0.0
+        ],
+        "fresnelColor": [
+          0.2861159145832062,
+          0.39815062284469604,
+          0.6176470518112183,
+          1.0
+        ],
+        "reflectionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "clothReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/cloth-px.png",
+            "textures/reflections/cloth-nx.png",
+            "textures/reflections/cloth-py.png",
+            "textures/reflections/cloth-ny.png",
+            "textures/reflections/cloth-pz.png",
+            "textures/reflections/cloth-nz.png"
+          ]
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "metal"
+    },
+    "floorCarpetDetail": {
+      "name": "floorCarpetDetail",
+      "shader": "sm/unlit",
+      "floats": {
+        "<noninit>": 3.0,
+        "amount": 0.7799999713897705,
+        "detailsLighten": 0.41999998688697815,
+        "detailsPow": 1.7100000381469727,
+        "detailsPow2": 1.350000023841858,
+        "diffuseAmount": 0.15000000596046448,
+        "fresnelAmount": 0.9800000190734863,
+        "fresnelFocus": 0.029999999329447746,
+        "fresnelReflection": 1.0,
+        "fresnelReflectionIntensity": 6.809999942779541,
+        "mainAmount": 0.7300000190734863,
+        "roughness": 0.0
+      },
+      "colors": {
+        "<noninit>": [
+          4.06313943862915,
+          2.8024251461029053,
+          3.0229623317718506,
+          0.0
+        ],
+        "boundsMax": [
+          4.820505142211914,
+          9.931550025939941,
+          3.308377981185913,
+          0.0
+        ],
+        "boundsMin": [
+          -4.788043022155762,
+          7.1172590255737305,
+          -3.4138128757476807,
+          0.0
+        ],
+        "probePosition": [
+          0.0053980061784386635,
+          7.991523742675781,
+          -0.007406978402286768,
+          0.0
+        ],
+        "reflectionColor": [
+          0.2100994735956192,
+          0.30558109283447266,
+          0.49264705181121826,
+          1.0
+        ]
+      },
+      "textures": {
+        "baseMap": {
+          "name": "floorColor",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-tile-color.png"
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": true,
+        "castShadow": true
+      },
+      "shadingModel": "basic"
+    },
+    "floorMetal": {
+      "name": "floorMetal",
+      "shader": "sm/metal",
+      "floats": {
+        "<noninit>": 8.739999771118164,
+        "amount": 2.509999990463257,
+        "fresnelAmount": 0.8899999856948853,
+        "fresnelFocus": 0.07999999821186066,
+        "mainAmount": 1.0
+      },
+      "colors": {
+        "<noninit>": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          4.820505142211914,
+          10.249862670898438,
+          3.308377981185913,
+          0.0
+        ],
+        "boundsMin": [
+          -4.788043022155762,
+          6.98528528213501,
+          -3.4138128757476807,
+          0.0
+        ],
+        "probePosition": [
+          0.0053980061784386635,
+          7.999431133270264,
+          -0.007406978402286768,
+          0.0
+        ],
+        "fresnelColor": [
+          0.23529410362243652,
+          0.2953346371650696,
+          0.47058820724487305,
+          1.0
+        ],
+        "reflectionColor": [
+          0.5218425393104553,
+          0.5343396067619324,
+          0.5588235259056091,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "roomReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/room-px.png",
+            "textures/reflections/room-nx.png",
+            "textures/reflections/room-py.png",
+            "textures/reflections/room-ny.png",
+            "textures/reflections/room-pz.png",
+            "textures/reflections/room-nz.png"
+          ]
+        },
+        "baseMap": {
+          "name": "floorMetal",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-metal-color.png"
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "metal"
+    },
+    "floorTile": {
+      "name": "floorTile",
+      "shader": "sm/cloth",
+      "floats": {
+        "<noninit>": 1.7899999618530273,
+        "amount": 3.0,
+        "detailsLighten": 0.09000000357627869,
+        "detailsPow": 0.15000000596046448,
+        "detailsPow2": 1.7400000095367432,
+        "diffuseAmount": 0.8600000143051147,
+        "fresnelAmount": 5.0,
+        "fresnelFocus": 0.03999999910593033,
+        "fresnelReflection": 1.0,
+        "fresnelReflectionIntensity": 8.0,
+        "mainAmount": 1.0,
+        "roughness": -0.0
+      },
+      "colors": {
+        "<noninit>": [
+          4.06313943862915,
+          2.8024251461029053,
+          3.0229623317718506,
+          0.0
+        ],
+        "boundsMax": [
+          4.820505142211914,
+          10.249862670898438,
+          3.308377981185913,
+          0.0
+        ],
+        "boundsMin": [
+          -4.788043022155762,
+          6.98528528213501,
+          -3.4138128757476807,
+          0.0
+        ],
+        "probePosition": [
+          0.0053980061784386635,
+          7.999431133270264,
+          -0.007406978402286768,
+          0.0
+        ],
+        "reflectionColor": [
+          0.16906358301639557,
+          0.24757859110832214,
+          0.43382352590560913,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "roomReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/room-px.png",
+            "textures/reflections/room-nx.png",
+            "textures/reflections/room-py.png",
+            "textures/reflections/room-ny.png",
+            "textures/reflections/room-pz.png",
+            "textures/reflections/room-nz.png"
+          ]
+        },
+        "detailMap": {
+          "name": "floorTileColor",
+          "repeat": [
+            4.699999809265137,
+            7.300000190734863
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-tile-color-variant-2.png"
+        },
+        "baseMap": {
+          "name": "floorColor",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-tile-color.png"
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "cloth"
+    },
+    "tableClothColor": {
+      "name": "tableClothColor",
+      "shader": "sm/cloth",
+      "floats": {
+        "amount": 1.6799999475479126,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "detailsLighten": 0.07000000029802322,
+        "detailsPow": 0.44999998807907104,
+        "detailsPow2": 1.1299999952316284,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 1.0,
+        "fresnelFocus": 0.009999999776482582,
+        "fresnelReflection": 0.10000000149011612,
+        "fresnelReflectionIntensity": 0.949999988079071,
+        "gloss": 0.10999999940395355,
+        "glossiness": 0.5,
+        "mainAmount": 0.8999999761581421,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.27000001072883606,
+        "specular": 0.10999999940395355,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 0.8999999761581421
+      },
+      "colors": {
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.5882353186607361,
+          0.5882353186607361,
+          0.5882353186607361,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectionColor": [
+          0.0,
+          0.2965517044067383,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "floorReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-soft-px.png",
+            "textures/reflections/floor-soft-nx.png",
+            "textures/reflections/floor-soft-py.png",
+            "textures/reflections/floor-soft-ny.png",
+            "textures/reflections/floor-soft-pz.png",
+            "textures/reflections/floor-soft-nz.png"
+          ]
+        },
+        "detailMap": {
+          "name": "clothWeaveDetail",
+          "repeat": [
+            20.0,
+            15.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/cloth-weave-detail.png"
+        },
+        "baseMap": {
+          "name": "clothColor",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/scene/table-cloth-color-color.png"
+        }
+      },
+      "render": {
+        "surface": "baize",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": true,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": false
+      },
+      "shadingModel": "cloth"
+    },
+    "floorCarpet": {
+      "name": "floorCarpet",
+      "shader": "sm/unlit",
+      "floats": {
+        "amount": 3.0,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "detailsLighten": 0.33000001311302185,
+        "detailsPow": 2.5999999046325684,
+        "detailsPow2": 2.799999952316284,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 1.0,
+        "fresnelFocus": 0.009999999776482582,
+        "fresnelReflection": 0.10000000149011612,
+        "fresnelReflectionIntensity": 0.949999988079071,
+        "gloss": 0.10999999940395355,
+        "glossiness": 0.5,
+        "mainAmount": 0.029999999329447746,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.27000001072883606,
+        "specular": 0.10999999940395355,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 0.8999999761581421,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.5882353186607361,
+          0.5882353186607361,
+          0.5882353186607361,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectionColor": [
+          0.0,
+          0.2965517044067383,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": {
+        "baseMap": {
+          "name": "floorCarpetColor",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-carpet-color.png"
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": true,
+        "castShadow": true
+      },
+      "shadingModel": "basic"
+    },
+    "floorTileAlternate": {
+      "name": "floorTileAlternate",
+      "shader": "sm/cloth",
+      "floats": {
+        "amount": 1.0099999904632568,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "detailsLighten": 0.3199999928474426,
+        "detailsPow": 0.10999999940395355,
+        "detailsPow2": 3.799999952316284,
+        "diffuseAmount": 0.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 2.680000066757202,
+        "fresnelFocus": 0.13199999928474426,
+        "fresnelReflection": 1.0,
+        "fresnelReflectionIntensity": 4.699999809265137,
+        "gloss": 0.10999999940395355,
+        "glossiness": 0.5,
+        "mainAmount": 0.2199999988079071,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.5609999895095825,
+        "specular": 0.10999999940395355,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 0.8999999761581421,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "boundsMax": [
+          7.557399749755859,
+          11.63310432434082,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          6.993103504180908,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.5882353186607361,
+          0.5882353186607361,
+          0.5882353186607361,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.313103675842285,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectionColor": [
+          0.0,
+          0.2965517044067383,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "floorReflectionSoft",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/table-px.png",
+            "textures/reflections/table-nx.png",
+            "textures/reflections/table-py.png",
+            "textures/reflections/table-ny.png",
+            "textures/reflections/table-pz.png",
+            "textures/reflections/table-nz.png"
+          ]
+        },
+        "detailMap": {
+          "name": "floorTile1",
+          "repeat": [
+            5.0,
+            5.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-tile1.png"
+        },
+        "baseMap": {
+          "name": "floorTileAlternateColor",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/floor-tile-alternate-color.png"
+        }
+      },
+      "render": {
+        "surface": null,
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "cloth"
+    },
+    "tableCushionCloth": {
+      "name": "tableCushionCloth",
+      "shader": "sm/cloth",
+      "floats": {
+        "amount": 1.2100000381469727,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "detailsLighten": 0.07000000029802322,
+        "detailsPow": 1.5800000429153442,
+        "detailsPow2": 2.1600000858306885,
+        "diffuseAmount": 1.0,
+        "dstBlend": 0.0,
+        "fresnelAmount": 1.0,
+        "fresnelFocus": 0.009999999776482582,
+        "fresnelReflection": 0.10000000149011612,
+        "fresnelReflectionIntensity": 0.949999988079071,
+        "gloss": 0.10999999940395355,
+        "glossiness": 0.5,
+        "mainAmount": 0.8999999761581421,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "parallax": 0.019999999552965164,
+        "roughness": 0.27000001072883606,
+        "specular": 0.10999999940395355,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 0.8999999761581421
+      },
+      "colors": {
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.5882353186607361,
+          0.5882353186607361,
+          0.5882353186607361,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectionColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "floorReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-soft-px.png",
+            "textures/reflections/floor-soft-nx.png",
+            "textures/reflections/floor-soft-py.png",
+            "textures/reflections/floor-soft-ny.png",
+            "textures/reflections/floor-soft-pz.png",
+            "textures/reflections/floor-soft-nz.png"
+          ]
+        },
+        "detailMap": {
+          "name": "clothWeaveDetail",
+          "repeat": [
+            13.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/cloth-weave-detail.png"
+        },
+        "baseMap": {
+          "name": "tableCushionCloth",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/scene/table-cushion-cloth-color.png"
+        }
+      },
+      "render": {
+        "surface": "cushionSurface",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": true,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": false
+      },
+      "shadingModel": "cloth"
+    },
+    "tableRailWood": {
+      "name": "tableRailWood",
+      "shader": "sm/wood",
+      "floats": {
+        "amount": 0.6600000262260437,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 0.3700000047683716,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.621999979019165,
+        "fresnelFocus": 0.13600000739097595,
+        "gloss": 0.5400000214576721,
+        "glossiness": 0.5,
+        "mainAmount": 1.0,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "reflAmount": 1.0,
+        "specular": 0.20999999344348907,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 1.0,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "ambientColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.7175999879837036,
+          0.6313999891281128,
+          0.49410000443458557,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "envBoxSize": [
+          10.100000381469727,
+          3.490000009536743,
+          10.550000190734863,
+          1.0
+        ],
+        "envBoxStart": [
+          0.0,
+          7.860000133514404,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reflectionColor": [
+          0.004487460944801569,
+          0.2844119369983673,
+          0.6102941036224365,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "tableReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-px.png",
+            "textures/reflections/floor-nx.png",
+            "textures/reflections/floor-py.png",
+            "textures/reflections/floor-ny.png",
+            "textures/reflections/floor-pz.png",
+            "textures/reflections/floor-nz.png"
+          ]
+        },
+        "baseMap": {
+          "name": "tableRailWood",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/table-rail-wood.png"
+        }
+      },
+      "render": {
+        "surface": "rail",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "wood"
+    },
+    "tableRailEdgeWood": {
+      "name": "tableRailEdgeWood",
+      "shader": "sm/wood",
+      "floats": {
+        "amount": 0.10999999940395355,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 0.3700000047683716,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.621999979019165,
+        "fresnelFocus": 0.13600000739097595,
+        "gloss": 0.5400000214576721,
+        "glossiness": 0.5,
+        "mainAmount": 0.7390000224113464,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "reflAmount": 1.0,
+        "specular": 0.20999999344348907,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 1.0,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "ambientColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.7175999879837036,
+          0.6313999891281128,
+          0.49410000443458557,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "envBoxSize": [
+          10.100000381469727,
+          3.490000009536743,
+          10.550000190734863,
+          1.0
+        ],
+        "envBoxStart": [
+          0.0,
+          7.860000133514404,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reflectionColor": [
+          0.004487460944801569,
+          0.2844119369983673,
+          0.6102941036224365,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "tableReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-px.png",
+            "textures/reflections/floor-nx.png",
+            "textures/reflections/floor-py.png",
+            "textures/reflections/floor-ny.png",
+            "textures/reflections/floor-pz.png",
+            "textures/reflections/floor-nz.png"
+          ]
+        },
+        "baseMap": {
+          "name": "tableRailWood",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/table-rail-wood.png"
+        }
+      },
+      "render": {
+        "surface": "rail",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "wood"
+    },
+    "tableLongApronWood": {
+      "name": "tableLongApronWood",
+      "shader": "sm/wood",
+      "floats": {
+        "amount": 0.23999999463558197,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 0.3700000047683716,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.621999979019165,
+        "fresnelFocus": 0.13600000739097595,
+        "gloss": 0.5400000214576721,
+        "glossiness": 0.5,
+        "mainAmount": 0.4099999964237213,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "reflAmount": 1.0,
+        "specular": 0.20999999344348907,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 1.0,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "ambientColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.7175999879837036,
+          0.6313999891281128,
+          0.49410000443458557,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "envBoxSize": [
+          10.100000381469727,
+          3.490000009536743,
+          10.550000190734863,
+          1.0
+        ],
+        "envBoxStart": [
+          0.0,
+          7.860000133514404,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reflectionColor": [
+          0.004487460944801569,
+          0.2844119369983673,
+          0.6102941036224365,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "tableReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-px.png",
+            "textures/reflections/floor-nx.png",
+            "textures/reflections/floor-py.png",
+            "textures/reflections/floor-ny.png",
+            "textures/reflections/floor-pz.png",
+            "textures/reflections/floor-nz.png"
+          ]
+        },
+        "baseMap": {
+          "name": "tableEndApronWood",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/table-end-apron-wood.png"
+        }
+      },
+      "render": {
+        "surface": "rail",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "wood"
+    },
+    "tableEndApronWood": {
+      "name": "tableEndApronWood",
+      "shader": "sm/wood",
+      "floats": {
+        "amount": 0.2199999988079071,
+        "bumpScale": 1.0,
+        "cutoff": 0.5,
+        "detailNormalMapScale": 1.0,
+        "diffuseAmount": 0.3700000047683716,
+        "dstBlend": 0.0,
+        "fresnelAmount": 0.621999979019165,
+        "fresnelFocus": 0.13600000739097595,
+        "gloss": 0.5400000214576721,
+        "glossiness": 0.5,
+        "mainAmount": 0.46000000834465027,
+        "metallic": 0.0,
+        "mode": 0.0,
+        "occlusionStrength": 1.0,
+        "parallax": 0.019999999552965164,
+        "reflAmount": 1.0,
+        "specular": 0.20999999344348907,
+        "srcBlend": 1.0,
+        "uvsec": 0.0,
+        "unlitAmount": 1.0,
+        "zwrite": 1.0
+      },
+      "colors": {
+        "ambientColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "boundsMax": [
+          7.557399749755859,
+          11.124000549316406,
+          6.191500186920166,
+          0.0
+        ],
+        "boundsMin": [
+          -6.884599685668945,
+          7.124000549316406,
+          -6.0000996589660645,
+          0.0
+        ],
+        "color": [
+          0.7175999879837036,
+          0.6313999891281128,
+          0.49410000443458557,
+          1.0
+        ],
+        "emissionColor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "envBoxSize": [
+          10.100000381469727,
+          3.490000009536743,
+          10.550000190734863,
+          1.0
+        ],
+        "envBoxStart": [
+          0.0,
+          7.860000133514404,
+          0.0,
+          1.0
+        ],
+        "probePosition": [
+          0.33639997243881226,
+          9.124000549316406,
+          0.09570011496543884,
+          0.0
+        ],
+        "reflectColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reflectionColor": [
+          0.004487460944801569,
+          0.2844119369983673,
+          0.6102941036224365,
+          1.0
+        ]
+      },
+      "textures": {
+        "reflectionMap": {
+          "name": "tableReflection",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "faces": [
+            "textures/reflections/floor-px.png",
+            "textures/reflections/floor-nx.png",
+            "textures/reflections/floor-py.png",
+            "textures/reflections/floor-ny.png",
+            "textures/reflections/floor-pz.png",
+            "textures/reflections/floor-nz.png"
+          ]
+        },
+        "baseMap": {
+          "name": "tableEndApronWood",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "file": "textures/surface/table-end-apron-wood.png"
+        }
+      },
+      "render": {
+        "surface": "rail",
+        "groundOverlay": false,
+        "decal": false,
+        "net": false,
+        "cloth": false,
+        "gold": false,
+        "environmentAlpha": false,
+        "unlit": false,
+        "castShadow": true
+      },
+      "shadingModel": "wood"
+    }
+  }
+}

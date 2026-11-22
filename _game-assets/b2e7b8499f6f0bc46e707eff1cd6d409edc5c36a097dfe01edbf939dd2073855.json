@@ -1,0 +1,146 @@
+{
+  "commit": "746c83811bfd",
+  "sourceFile": "scene/shader.tables",
+  "sourceSHA256": "fbde5fea5750eb32e2a638b74b97ef6a39eed29283b2f46eb139893ca3af5175",
+  "ior": 1.5,
+  "scope": "Opaque Principled material with MULTI_GGX, Specular IOR Level 0.5, white specular tint, no coat/sheen/SSS/thin-film; other configurations require their own translation.",
+  "files": {
+    "E": {
+      "file": "native-diffuse-energy-E.bin",
+      "width": 32,
+      "height": 32,
+      "bytes": 4096
+    },
+    "Eavg": {
+      "file": "native-diffuse-energy-Eavg.bin",
+      "width": 32,
+      "height": 1,
+      "bytes": 128
+    },
+    "S": {
+      "file": "native-diffuse-energy-S.bin",
+      "width": 16,
+      "height": 16,
+      "bytes": 1024
+    }
+  },
+  "totalBytes": 5248,
+  "controls": [
+    {
+      "roughness": 0.085,
+      "cosineView": 0,
+      "nativeDiffuseAttenuation": 0.1394205418491159
+    },
+    {
+      "roughness": 0.085,
+      "cosineView": 0.1,
+      "nativeDiffuseAttenuation": 0.43141932154310336
+    },
+    {
+      "roughness": 0.085,
+      "cosineView": 0.5,
+      "nativeDiffuseAttenuation": 0.9102002845693288
+    },
+    {
+      "roughness": 0.085,
+      "cosineView": 0.9,
+      "nativeDiffuseAttenuation": 0.9590771605559396
+    },
+    {
+      "roughness": 0.085,
+      "cosineView": 1,
+      "nativeDiffuseAttenuation": 0.9600011180635456
+    },
+    {
+      "roughness": 0.33,
+      "cosineView": 0,
+      "nativeDiffuseAttenuation": 0.6133831832681107
+    },
+    {
+      "roughness": 0.33,
+      "cosineView": 0.1,
+      "nativeDiffuseAttenuation": 0.6937659907657467
+    },
+    {
+      "roughness": 0.33,
+      "cosineView": 0.5,
+      "nativeDiffuseAttenuation": 0.9143325151117043
+    },
+    {
+      "roughness": 0.33,
+      "cosineView": 0.9,
+      "nativeDiffuseAttenuation": 0.9590483914113588
+    },
+    {
+      "roughness": 0.33,
+      "cosineView": 1,
+      "nativeDiffuseAttenuation": 0.9603845940472018
+    },
+    {
+      "roughness": 0.47,
+      "cosineView": 0,
+      "nativeDiffuseAttenuation": 0.7552165451630067
+    },
+    {
+      "roughness": 0.47,
+      "cosineView": 0.1,
+      "nativeDiffuseAttenuation": 0.8005602926600457
+    },
+    {
+      "roughness": 0.47,
+      "cosineView": 0.5,
+      "nativeDiffuseAttenuation": 0.9272949078490793
+    },
+    {
+      "roughness": 0.47,
+      "cosineView": 0.9,
+      "nativeDiffuseAttenuation": 0.9604093317713954
+    },
+    {
+      "roughness": 0.47,
+      "cosineView": 1,
+      "nativeDiffuseAttenuation": 0.9619728529312521
+    },
+    {
+      "roughness": 0.96,
+      "cosineView": 0,
+      "nativeDiffuseAttenuation": 0.9050767214521677
+    },
+    {
+      "roughness": 0.96,
+      "cosineView": 0.1,
+      "nativeDiffuseAttenuation": 0.9354155174306593
+    },
+    {
+      "roughness": 0.96,
+      "cosineView": 0.5,
+      "nativeDiffuseAttenuation": 0.9734011395810179
+    },
+    {
+      "roughness": 0.96,
+      "cosineView": 0.9,
+      "nativeDiffuseAttenuation": 0.9832025346425323
+    },
+    {
+      "roughness": 0.96,
+      "cosineView": 1,
+      "nativeDiffuseAttenuation": 0.984429399657578
+    }
+  ],
+  "nativeChairBakeVerification": {
+    "expectedDiffuseColor": [
+      0.32707076999662577,
+      0.2789721273500631,
+      0.21163402764487546
+    ],
+    "actualRawBakeMedian": [
+      0.32707162921348315,
+      0.27897196261682244,
+      0.21163366336633663
+    ],
+    "maximumAbsoluteDifference": 8.592168573851033e-07,
+    "relativeTolerance": 0.002,
+    "passed": true
+  },
+  "notAVisualAcceptanceTest": true
+}

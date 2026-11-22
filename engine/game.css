@@ -1,0 +1,96 @@
+.game-hud, .shot-panel { display: none; }
+.is-playing .masthead, .is-playing .spec-card, .is-playing .hint { display: none; }
+.is-playing::after { display: none; }
+.is-playing .game-hud { display: block; position: fixed; top: auto; bottom: max(16px, env(safe-area-inset-bottom)); left: max(16px, env(safe-area-inset-left)); width: min(380px, calc(100% - 32px)); z-index: 4; }
+.match-score { display: grid; grid-template-columns: 1fr 70px 1fr; align-items: center; background: #111816ed; border-bottom: 2px solid #536b59; }
+.player { display: flex; gap: 20px; align-items: center; justify-content: space-between; padding: 12px 18px; border-top: 3px solid transparent; }
+.player.is-turn { border-top-color: #e6c069; background: #26322bed; }
+.player span { font-size: 13px; white-space: nowrap; }
+.player strong { font-size: 30px; font-variant-numeric: tabular-nums; }
+.break { display: grid; text-align: center; gap: 3px; }
+.break span { font-size: 10px; color: #a9b6ad; }
+.break strong { font-size: 20px; color: #e6c069; }
+.match-status { display: flex; flex-wrap: wrap; gap: 8px 14px; justify-content: center; align-items: center; padding: 8px; font-size: 12px; background: #111816db; }
+#shot-message { color: #b9c6bc; max-width: 100%; overflow-wrap: anywhere; }
+#fps { color: #a8b5b0; font-size: 10px; }
+.rule-actions { display: flex; gap: 6px; justify-content: center; padding-top: 6px; }
+.rule-actions:empty { display: none; }
+.game-hud button { cursor: pointer; border: 1px solid #506155; border-radius: 4px; padding: 8px 12px; color: #edf2eb; background: #1a261f; font: inherit; font-size: 12px; }
+button:disabled { opacity: .4; cursor: default; }
+.game-hud button:hover { background: #354839; }
+.game-hud .ball-swatch { width: 28px; height: 28px; border-radius: 50%; padding: 0; }
+.is-playing .shot-panel { display: flex; flex-direction: column; align-items: center; position: absolute; right: 12px; bottom: 76px; z-index: 5; gap: 8px; pointer-events: none; }
+#tip-pad, #power-track { display: block; touch-action: none; pointer-events: auto; }
+#tip-pad { width: 130px; height: 130px; cursor: crosshair; }
+#power-track { width: 130px; height: 354px; cursor: ns-resize; }
+.is-playing .toolbar { width: max-content; max-width: calc(100% - 16px); bottom: 12px; border-radius: 6px; gap: 4px; }
+.is-playing .toolbar button { flex: 0 0 auto; white-space: nowrap; }
+/* Keep the score above the centered view toolbar on narrower screens. */
+@media (max-width: 1200px) {
+  .is-playing .game-hud { bottom: max(76px, calc(env(safe-area-inset-bottom) + 64px)); }
+}
+@media (max-width: 600px) {
+  .is-playing .game-hud { left: max(8px, env(safe-area-inset-left)); width: calc(100% - 110px); }
+  .match-score { grid-template-columns: 1fr 42px 1fr; }
+  .player { flex-wrap: wrap; }
+  .player { padding: 7px 12px; gap: 12px; }
+  .player strong { font-size: 25px; }
+  .match-status { font-size: 10px; padding: 6px; }
+  .is-playing .shot-panel { bottom: 68px; right: 4px; gap: 0; }
+  #tip-pad { width: 90px; height: 90px; }
+  #power-track { width: 90px; height: 242px; }
+  .is-playing .toolbar { padding: 5px; gap: 1px; }
+  .is-playing .toolbar button { padding: 9px 7px; font-size: 11px; }
+}
+@media (max-height: 560px) and (min-width: 601px) {
+  .is-playing .game-hud { width: 380px; }
+  .player { padding: 3px 12px; }
+  .player strong { font-size: 24px; }
+  .is-playing .shot-panel { bottom: 68px; gap: 0; }
+  #tip-pad { width: 76px; height: 76px; }
+  #power-track { width: 76px; height: 212px; }
+}
+
+/* Transparent cue power meter, visible only during an active pull. */
+.effective-power { display: none; position: fixed; left: 50%; transform: translateX(-50%); width: clamp(210px, 33vw, 600px); max-width: calc(100vw - 32px); z-index: 5; pointer-events: none; }
+.is-playing .effective-power:not([hidden]) { display: block; }
+.effective-power-track { position: relative; box-sizing: border-box; height: 57px; overflow: hidden; border: 2px solid rgba(255,255,255,.5); border-radius: var(--power-corner-radius, 8px); background: rgba(0,0,0,.2); box-shadow: inset 0 2px 2px #ffffff45; }
+.effective-power-fill { position: absolute; inset: 0; clip-path: inset(0 100% 0 0); background-color: #30b868; background-image: linear-gradient(to bottom, #ffffff65, #ffffff00 28%, #ffffff00 80%, #75430020); opacity: 1; }
+.effective-power-loss { position: absolute; inset: 0; clip-path: inset(0 100% 0 0); background: #ffffff70; }
+
+/* Keep the readout centered above the continuous fill. */
+.effective-power-value { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); min-width:3ch; color:#fff; font:800 35.2px system-ui,sans-serif; text-shadow:0 1px 3px #000, 0 0 2px #000; font-variant-numeric:tabular-nums; text-align:center; white-space:nowrap; }
+
+html:not([data-product="trial"]) .shot-panel { padding-right:env(safe-area-inset-right, 0px); }
+
+/* Ten-unit ruler marks stay short and below the centered readout. */
+.effective-power-ticks { position:absolute; inset:0; pointer-events:none; }
+.effective-power-ticks i { position:absolute; bottom:0; width:1px; height:min(6px, 20%); background:rgba(255,255,255,.85); box-shadow:0 0 1px rgba(0,0,0,.65); transform:translateX(-50%); }
+
+.observation-joystick {
+  position:fixed;z-index:24;box-sizing:border-box;padding:0;border-radius:50%;
+  border:1.5px solid rgba(255,255,255,.38);background:rgba(235,241,246,.10);
+  box-shadow:0 1px 3px #0002,inset 0 1px 2px #ffffff18;
+  touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;
+}
+.observation-joystick:disabled{opacity:.45;cursor:default;}
+.observation-joystick[hidden]{display:none!important;}
+.observation-joystick-stick {
+  position:absolute;inset:17%;border-radius:50%;box-sizing:border-box;border:1.5px solid rgba(255,255,255,.5);
+  background:linear-gradient(150deg,rgba(255,255,255,.22),rgba(220,229,238,.08));
+  box-shadow:0 2px 3px #0003,inset 0 1px 2px #ffffff30;
+  transform:translate(var(--stick-x,0px),var(--stick-y,0px));transition:transform 200ms ease-out;pointer-events:none;
+}
+.observation-joystick.is-held{cursor:grabbing;}
+.observation-joystick.is-held .observation-joystick-stick{transition:none;}
+.observation-joystick:focus-visible{outline:2px solid #e5bd66;outline-offset:3px;}
+
+.cue-placement-hint{position:fixed;inset:0;z-index:6;pointer-events:none}
+.cue-placement-hint[hidden]{display:none!important}
+.cue-placement-connector{position:absolute;left:0;top:0;height:1.5px;background:#d2f9ec;opacity:.65;transform-origin:0 50%;will-change:transform;pointer-events:none}
+.cue-placement-handle{display:grid;place-items:center;position:absolute;left:0;top:0;width:48px;height:48px;box-sizing:border-box;border:0;padding:0;background:transparent;pointer-events:auto;touch-action:none;cursor:grab;border-radius:50%;will-change:transform;-webkit-tap-highlight-color:transparent}
+.cue-placement-handle[hidden]{display:none!important}
+.cue-placement-handle>img{display:block;width:48px;height:48px;pointer-events:none;opacity:.88;user-select:none;-webkit-user-drag:none}
+.cue-placement-handle.is-held{cursor:grabbing}
+.cue-placement-handle.is-held>img{opacity:1}
+.cue-placement-handle:focus-visible{outline:2px solid #e2bf78;outline-offset:2px}

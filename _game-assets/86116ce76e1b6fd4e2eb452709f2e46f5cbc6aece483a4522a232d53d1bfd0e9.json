@@ -1,0 +1,1301 @@
+{
+  "name": "tableGroup",
+  "position": [
+    -0.9108546376228333,
+    0.8238086700439453,
+    0.18565289676189423
+  ],
+  "quaternion": [
+    -0.7071068286895752,
+    0.0,
+    0.0,
+    0.7071068286895752
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "children": [
+    {
+      "name": "tableCushions",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-cushions.obj",
+      "materials": [
+        {
+          "name": "tableCushionCloth",
+          "shader": "sm/cloth",
+          "floats": {
+            "amount": 1.2100000381469727,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "detailsLighten": 0.07000000029802322,
+            "detailsPow": 1.5800000429153442,
+            "detailsPow2": 2.1600000858306885,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.009999999776482582,
+            "fresnelReflection": 0.10000000149011612,
+            "fresnelReflectionIntensity": 0.949999988079071,
+            "gloss": 0.10999999940395355,
+            "glossiness": 0.5,
+            "mainAmount": 0.8999999761581421,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "parallax": 0.019999999552965164,
+            "roughness": 0.27000001072883606,
+            "specular": 0.10999999940395355,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 0.8999999761581421
+          },
+          "texture": "textures/scene/table-cushion-cloth-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "cushionSurface",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": true,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "cloth"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableLongApron",
+      "position": [
+        -0.9959641098976135,
+        -0.9216578602790833,
+        -0.19666625559329987
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-long-apron.obj",
+      "materials": [
+        {
+          "name": "tableLongApronWood",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.23999999463558197,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3700000047683716,
+            "dstBlend": 0.0,
+            "fresnelAmount": 0.621999979019165,
+            "fresnelFocus": 0.13600000739097595,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.4099999964237213,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "reflAmount": 1.0,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/table/walnut-apron-v3.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "rail",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableRailFrame",
+      "position": [
+        1.820984125137329,
+        -1.9121655225753784,
+        -0.0322912260890007
+      ],
+      "quaternion": [
+        8.940696716308594e-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-rail-frame.obj",
+      "materials": [
+        {
+          "name": "tableRailWood",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.6600000262260437,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3700000047683716,
+            "dstBlend": 0.0,
+            "fresnelAmount": 0.621999979019165,
+            "fresnelFocus": 0.13600000739097595,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 1.0,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "reflAmount": 1.0,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/table/walnut-rail-v3.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "rail",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        },
+        {
+          "name": "tableRailEdgeWood",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.10999999940395355,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3700000047683716,
+            "dstBlend": 0.0,
+            "fresnelAmount": 0.621999979019165,
+            "fresnelFocus": 0.13600000739097595,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.7390000224113464,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "reflAmount": 1.0,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/table/walnut-rail-v3.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "rail",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableEndApron",
+      "position": [
+        1.0369542837142944,
+        -0.9218881726264954,
+        -0.21043671667575836
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-end-apron.obj",
+      "materials": [
+        {
+          "name": "tableEndApronWood",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.2199999988079071,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3700000047683716,
+            "dstBlend": 0.0,
+            "fresnelAmount": 0.621999979019165,
+            "fresnelFocus": 0.13600000739097595,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.46000000834465027,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "reflAmount": 1.0,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/table/walnut-apron-v3.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "rail",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableBase",
+      "position": [
+        0.9108542203903198,
+        -0.9216575026512146,
+        -0.032184116542339325
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-base.obj",
+      "materials": [
+        {
+          "name": "tableGoldPanelLong",
+          "shader": "sm/metal",
+          "floats": {
+            "amount": 2.0,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.03999999910593033,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.28999999165534973,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "shininess": 0.078125,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0,
+            "isToggled": 0.0
+          },
+          "texture": "textures/scene/table-gold-panel-long-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "metal"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableCloth",
+      "position": [
+        0.9108546376228333,
+        -0.921657383441925,
+        -0.005839756224304438
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-cloth.obj",
+      "materials": [
+        {
+          "name": "tableClothColor",
+          "shader": "sm/cloth",
+          "floats": {
+            "amount": 1.6799999475479126,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "detailsLighten": 0.07000000029802322,
+            "detailsPow": 0.44999998807907104,
+            "detailsPow2": 1.1299999952316284,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.009999999776482582,
+            "fresnelReflection": 0.10000000149011612,
+            "fresnelReflectionIntensity": 0.949999988079071,
+            "gloss": 0.10999999940395355,
+            "glossiness": 0.5,
+            "mainAmount": 0.8999999761581421,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "parallax": 0.019999999552965164,
+            "roughness": 0.27000001072883606,
+            "specular": 0.10999999940395355,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 0.8999999761581421
+          },
+          "texture": "textures/scene/table-cloth-color-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": "baize",
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": true,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "cloth"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableMarkings",
+      "position": [
+        0.9779489040374756,
+        -0.9218429923057556,
+        -0.00576459476724267
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        1.0,
+        7.549790836947068e-08
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-markings.obj",
+      "materials": [
+        {
+          "name": "tableLineBaulk",
+          "shader": "sm/transparent",
+          "floats": {
+            "alpha": 1.0,
+            "amount": 0.24400000274181366,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 0.0,
+            "emission": 0.5,
+            "glossiness": 0.5,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.5,
+            "rimPower": 3.0,
+            "specular": 50.0,
+            "specularAmount": 0.5,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-line-baulk-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": true,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": true,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "basic"
+        },
+        {
+          "name": "tableLineArc",
+          "shader": "sm/transparent",
+          "floats": {
+            "alpha": 1.0,
+            "amount": 0.24400000274181366,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 0.0,
+            "emission": 0.5,
+            "glossiness": 0.5,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.5,
+            "rimPower": 3.0,
+            "specular": 50.0,
+            "specularAmount": 0.5,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-line-arc-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": true,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": true,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "basic"
+        },
+        {
+          "name": "tableLineSpots",
+          "shader": "sm/transparent",
+          "floats": {
+            "alpha": 1.0,
+            "amount": 0.24400000274181366,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 0.0,
+            "emission": 0.5,
+            "glossiness": 0.5,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.5,
+            "rimPower": 3.0,
+            "specular": 50.0,
+            "specularAmount": 0.5,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-line-spots-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": true,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": true,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "basic"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "pocketNetAssembly",
+      "position": [
+        2.7142093181610107,
+        -1.829732060432434,
+        -0.06199740245938301
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/pocket-net-assembly.obj",
+      "materials": [
+        {
+          "name": "pocketNet",
+          "shader": "sm/cutout",
+          "floats": {
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 10.0,
+            "glossiness": 0.5,
+            "metallic": 0.0,
+            "mode": 3.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 0.0
+          },
+          "texture": "textures/scene/pocket-net-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": true,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": true,
+            "unlit": false,
+            "castShadow": false
+          },
+          "shadingModel": "basic"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "pocketCornerLeather",
+      "position": [
+        0.9108625650405884,
+        -0.9216671586036682,
+        -0.010939053259789944
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/pocket-corner-leather.obj",
+      "materials": [
+        {
+          "name": "pocketLeather",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.27000001072883606,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3100000023841858,
+            "dstBlend": 0.0,
+            "emission": 0.4699999988079071,
+            "gloss": 0.5199999809265137,
+            "glossiness": 0.5,
+            "mainAmount": 1.0,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.3199999928474426,
+            "specular": 0.029999999329447746,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 0.23999999463558197,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/pocket-leather-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "pocketMiddleLeather",
+      "position": [
+        0.9108546376228333,
+        -1.9225469827651978,
+        -0.011452904902398586
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/pocket-middle-leather.obj",
+      "materials": [
+        {
+          "name": "pocketLeatherMid",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.27000001072883606,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.3100000023841858,
+            "dstBlend": 0.0,
+            "emission": 0.4699999988079071,
+            "gloss": 0.5199999809265137,
+            "glossiness": 0.5,
+            "mainAmount": 1.0,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.3199999928474426,
+            "specular": 0.029999999329447746,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 0.23999999463558197,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/pocket-leather-mid-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableLegMount",
+      "position": [
+        -0.7799955010414124,
+        -0.12750975787639618,
+        -0.8238087892532349
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-leg-mount.obj",
+      "materials": [
+        {
+          "name": "tableGoldPostSquare",
+          "shader": "sm/metal",
+          "floats": {
+            "amount": 1.2999999523162842,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.03999999910593033,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.36000001430511475,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "shininess": 0.078125,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0,
+            "isToggled": 0.0
+          },
+          "texture": "textures/scene/table-gold-post-square-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "metal"
+        },
+        {
+          "name": "tableGoldPostSquare",
+          "shader": "sm/metal",
+          "floats": {
+            "amount": 1.2999999523162842,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.03999999910593033,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.36000001430511475,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "shininess": 0.078125,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0,
+            "isToggled": 0.0
+          },
+          "texture": "textures/scene/table-gold-post-square-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "metal"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableLegBody",
+      "position": [
+        0.9109231233596802,
+        -0.9211646318435669,
+        -0.6074740886688232
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        -8.742278367890322e-08,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-leg-body.obj",
+      "materials": [
+        {
+          "name": "tableGoldRoundNm",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 1.159999966621399,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 0.23999999463558197,
+            "fresnelFocus": 0.012000000104308128,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.30000001192092896,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "shininess": 0.078125,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0,
+            "isToggled": 0.0
+          },
+          "texture": "textures/scene/table-gold-round-nm-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "tableLegInlay",
+      "position": [
+        0.9108546376228333,
+        -0.9860493540763855,
+        -0.820790708065033
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/table-leg-inlay.obj",
+      "materials": [
+        {
+          "name": "tableGoldPanel",
+          "shader": "sm/metal",
+          "floats": {
+            "amount": 2.0,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 1.0,
+            "dstBlend": 0.0,
+            "fresnelAmount": 1.0,
+            "fresnelFocus": 0.03999999910593033,
+            "gloss": 0.5400000214576721,
+            "glossiness": 0.5,
+            "mainAmount": 0.4000000059604645,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "shininess": 0.078125,
+            "specular": 0.20999999344348907,
+            "srcBlend": 1.0,
+            "unlitAmount": 1.0,
+            "zwrite": 1.0,
+            "isToggled": 0.0
+          },
+          "texture": "textures/scene/table-gold-panel-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "metal"
+        },
+        {
+          "name": "tableBrandLogo",
+          "shader": "sm/transparent",
+          "floats": {
+            "alpha": 1.0,
+            "amount": 0.24400000274181366,
+            "bumpScale": 1.0,
+            "cutoff": 0.6830000281333923,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 0.0,
+            "emission": 0.5,
+            "glossiness": 0.5,
+            "invFade": 1.5299999713897705,
+            "metallic": 0.0,
+            "mipLevel": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "power": 0.5,
+            "rimPower": 3.0,
+            "shininess": 0.699999988079071,
+            "specular": 50.0,
+            "specularAmount": 0.5,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-brand-logo-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": true,
+            "net": false,
+            "cloth": false,
+            "gold": true,
+            "environmentAlpha": true,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "basic"
+        }
+      ],
+      "floorSurface": false
+    },
+    {
+      "name": "pocketBallReturn",
+      "position": [
+        0.9108546376228333,
+        -0.9216575026512146,
+        -0.18466824293136597
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [],
+      "mesh": "models/environment/pocket-ball-return.obj",
+      "materials": [
+        {
+          "name": "tablePocketStrap",
+          "shader": "sm/wood",
+          "floats": {
+            "amount": 0.4699999988079071,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "dstBlend": 0.0,
+            "gloss": 0.4099999964237213,
+            "glossiness": 0.5,
+            "mainAmount": 0.2879999876022339,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "specular": 0.23000000417232513,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "unlitAmount": 0.33000001311302185,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-pocket-strap-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        },
+        {
+          "name": "tablePocketRail",
+          "shader": "sm/wood",
+          "floats": {
+            "ambientHeight": 0.8600000143051147,
+            "ambientLightness": 0.8199999928474426,
+            "ambientLow": 0.44999998807907104,
+            "amount": 0.3499999940395355,
+            "bumpScale": 1.0,
+            "cutoff": 0.5,
+            "detailNormalMapScale": 1.0,
+            "diffuseAmount": 0.27000001072883606,
+            "dstBlend": 0.0,
+            "glossiness": 0.5,
+            "mainAmount": 0.4699999988079071,
+            "metallic": 0.0,
+            "mode": 0.0,
+            "occlusionStrength": 1.0,
+            "parallax": 0.019999999552965164,
+            "srcBlend": 1.0,
+            "uvsec": 0.0,
+            "zwrite": 1.0
+          },
+          "texture": "textures/scene/table-pocket-rail-color.png",
+          "repeat": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "render": {
+            "surface": null,
+            "groundOverlay": false,
+            "decal": false,
+            "net": false,
+            "cloth": false,
+            "gold": false,
+            "environmentAlpha": false,
+            "unlit": false,
+            "castShadow": true
+          },
+          "shadingModel": "wood"
+        }
+      ],
+      "floorSurface": false
+    }
+  ]
+}

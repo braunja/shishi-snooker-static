@@ -1,0 +1,14 @@
+/* The released design tokens and canvas own all page chrome. */
+.hosted-battle-page .panel{padding:0;border:0;background:none;box-shadow:none}
+.hosted-battle-page .eyebrow,.hosted-battle-page>.page-content>.panel>h1{display:none}
+.hosted-battle-page .inbox{margin:18px 0;padding:14px;border:1px solid #ffffff24;border-radius:6px;background:#101d23b3}
+.hosted-battle-page .inbox h2{font-size:17px;margin-bottom:12px}.hosted-battle-page .inbox p{margin:8px 0}
+.hosted-battle-page form#create-room{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.hosted-battle-page #room-config{width:100%}
+.hosted-battle-page #opponent{flex:1;min-width:130px}.hosted-battle-page .steps{display:flex;gap:16px;justify-content:center;margin:16px 0;color:#aabdb3}
+.hosted-battle-page .room-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.hosted-battle-page .room-actions a{display:inline-flex;align-items:center;justify-content:center;padding:9px 16px;min-height:40px;border:1px solid #ffffff38;border-radius:6px;background:#173e30;text-decoration:none}
+.hosted-battle-page .invite{display:flex;gap:10px;margin:10px 0}.hosted-battle-page .invite input{flex:1;min-width:0}
+.hosted-battle-page .room-players{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}.hosted-battle-page .room-players>div{padding:22px;text-align:center;border:1px solid #ffffff38;border-radius:6px;background:#152b23}
+.hosted-battle-page .message{margin:12px 0;color:#b1d7bf;min-height:22px}.hosted-battle-page .message.error{color:#ffb0a9}
+.hosted-battle-page .invitation-item,.hosted-battle-page .active-item,.hosted-battle-page .spectator-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #ffffff24;flex-wrap:wrap}.hosted-battle-page .invitation-item>div:first-child{flex:1}
+.hosted-battle-page footer{font-size:12px;color:#9eb5a7;margin-top:18px}.hosted-battle-page .lead{font-size:14px;color:#b6c9bd}
+#screen.portrait .hosted-battle-page .steps{font-size:12px;gap:8px}#screen.portrait .hosted-battle-page .room-players{gap:10px}#screen.portrait .hosted-battle-page .room-players>div{padding:18px 6px}

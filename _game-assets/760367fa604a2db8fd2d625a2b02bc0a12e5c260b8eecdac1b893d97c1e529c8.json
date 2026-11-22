@@ -1,0 +1,25 @@
+{
+  "positionBlenderM": [
+    0,
+    0,
+    0.3
+  ],
+  "resolution": [
+    512,
+    256
+  ],
+  "samples": 48,
+  "preparedSha256": "45a28cf63418b47d318788ce70f5b6d36d9c58699ef360c596020c7edffd9445",
+  "tableOcclusionPresent": true,
+  "gameCameraBranchConvertedOnlyInUnsavedProbeCopy": [
+    "Game upper · tableClothColor",
+    "Game upper · tableCushionCloth",
+    "Game upper · tableRailEdgeWood",
+    "Game upper · tableRailEdgeWood.001",
+    "Game upper · tableRailWood"
+  ],
+  "receiverGroups": [
+    "table-body-09"
+  ],
+  "runtimeCapture": false
+}

@@ -1,0 +1,2104 @@
+{
+  "name": "arenaRoot",
+  "position": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "children": [
+    {
+      "name": "arenaGroup",
+      "position": [
+        -6.550606727600098,
+        -1.4689090251922607,
+        -6.851635932922363
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "arenaLights",
+          "position": [
+            6.370308876037598,
+            8.936914443969727,
+            5.977962493896484
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/arena-lights.obj",
+          "materials": [
+            {
+              "name": "arenaLights",
+              "shader": "sm/unlit",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 1.0,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "powerBlue": 1.0,
+                "powerGreen": 1.0,
+                "powerRed": 1.0,
+                "srcBlend": 1.0,
+                "subPowerBlue": 0.0,
+                "subPowerGreen": 0.0,
+                "subPowerRed": 0.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.5,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/arena-lights-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "arenaColour",
+          "position": [
+            6.373165607452393,
+            0.5462707877159119,
+            7.192257404327393
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            6.7105560302734375,
+            4.402703762054443,
+            4.164067268371582
+          ],
+          "children": [],
+          "mesh": "models/environment/arena-colour.obj",
+          "materials": [
+            {
+              "name": "arenaColour",
+              "shader": "sm/unlit",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 1.0,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "powerBlue": 1.0,
+                "powerGreen": 1.0,
+                "powerRed": 1.0,
+                "srcBlend": 1.0,
+                "subPowerBlue": 0.0,
+                "subPowerGreen": 0.0,
+                "subPowerRed": 0.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.5,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/arena-colour-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "seatingSteps",
+          "position": [
+            7.2087531089782715,
+            3.055173397064209,
+            16.565059661865234
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            0.9210163354873657,
+            0.9210163354873657,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/seating-steps.obj",
+          "materials": [
+            {
+              "name": "seatingSteps",
+              "shader": "sm/unlit",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 1.0,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "powerBlue": 1.0,
+                "powerGreen": 1.0,
+                "powerRed": 1.0,
+                "srcBlend": 1.0,
+                "subPowerBlue": 0.0,
+                "subPowerGreen": 0.0,
+                "subPowerRed": 0.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.5,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/seating-steps-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "seatedChairs",
+          "position": [
+            7.222339630126953,
+            3.335057497024536,
+            16.558513641357422
+          ],
+          "quaternion": [
+            -0.4999995231628418,
+            0.5000004768371582,
+            0.500000536441803,
+            0.49999943375587463
+          ],
+          "scale": [
+            1.0804208517074585,
+            1.0804208517074585,
+            1.1730746030807495
+          ],
+          "children": [],
+          "mesh": "models/environment/seated-chairs.obj",
+          "materials": [
+            {
+              "name": "seatingChairs",
+              "shader": "sm/transparent",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.8109999895095825,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 10.0,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 3.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 0.0
+              },
+              "texture": "textures/scene/seating-chairs-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "seatingWalls",
+          "position": [
+            6.929172039031982,
+            5.9894866943359375,
+            17.11893653869629
+          ],
+          "quaternion": [
+            -0.5000000596046448,
+            0.4999999701976776,
+            0.4999999701976776,
+            0.5000000596046448
+          ],
+          "scale": [
+            1.1730746030807495,
+            1.5575889348983765,
+            1.1730746030807495
+          ],
+          "children": [],
+          "mesh": "models/environment/seating-walls.obj",
+          "materials": [
+            {
+              "name": "seatingWall",
+              "shader": "sm/unlit",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/seating-wall-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "curtainWall",
+          "position": [
+            6.841448783874512,
+            1.4689090251922607,
+            14.705023765563965
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.1095337867736816,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/curtain-wall.obj",
+          "materials": [
+            {
+              "name": "arenaCurtain",
+              "shader": "sm/unlit",
+              "floats": {
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/arena-curtain-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "floor",
+          "position": [
+            6.462695121765137,
+            1.4709089994430542,
+            8.05924129486084
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.161747932434082,
+            1.161747932434082,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor.obj",
+          "materials": [
+            {
+              "name": "floorCarpet",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 3.0,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "detailsLighten": 0.33000001311302185,
+                "detailsPow": 2.5999999046325684,
+                "detailsPow2": 2.799999952316284,
+                "diffuseAmount": 1.0,
+                "dstBlend": 0.0,
+                "fresnelAmount": 1.0,
+                "fresnelFocus": 0.009999999776482582,
+                "fresnelReflection": 0.10000000149011612,
+                "fresnelReflectionIntensity": 0.949999988079071,
+                "gloss": 0.10999999940395355,
+                "glossiness": 0.5,
+                "mainAmount": 0.029999999329447746,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "roughness": 0.27000001072883606,
+                "specular": 0.10999999940395355,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.8999999761581421,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-carpet-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        }
+      ]
+    },
+    {
+      "name": "bannersGroup",
+      "position": [
+        0.16080951690673828,
+        0.1631462574005127,
+        4.890973091125488
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "bannerWall",
+          "position": [
+            -0.1703374832868576,
+            1.1268305778503418,
+            0.3427548408508301
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            0.6420214772224426,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/banner-wall.obj",
+          "materials": [
+            {
+              "name": "bannerBlue",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            },
+            {
+              "name": "bannerBlueBack",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-back-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "logoBannerMain",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.7200000286102295,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.6830000281333923,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "invFade": 1.5299999713897705,
+                "metallic": 0.0,
+                "mipLevel": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.699999988079071,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/logo-banner-main-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "bannerLogoLarge",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.7699999809265137,
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-logo-large-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "logoBannerGiraffe",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.7200000286102295,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.6830000281333923,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "invFade": 1.5299999713897705,
+                "metallic": 0.0,
+                "mipLevel": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.699999988079071,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/logo-banner-giraffe-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "bannerLogos",
+          "position": [
+            -5.892126560211182,
+            0.7202774882316589,
+            -3.4113173484802246
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/banner-logos.obj",
+          "materials": [
+            {
+              "name": "logoBannerGiraffe",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.7200000286102295,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.6830000281333923,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "invFade": 1.5299999713897705,
+                "metallic": 0.0,
+                "mipLevel": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.699999988079071,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/logo-banner-giraffe-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "logoBannerMain",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.7200000286102295,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.6830000281333923,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "invFade": 1.5299999713897705,
+                "metallic": 0.0,
+                "mipLevel": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.699999988079071,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/logo-banner-main-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "bannerColour",
+          "position": [
+            -0.13703875243663788,
+            0.6584622859954834,
+            1.1857166290283203
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/banner-colour.obj",
+          "materials": [
+            {
+              "name": "bannerBlue",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            },
+            {
+              "name": "bannerBlueBack",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-back-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "bannerBluePlyr",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-plyr-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            },
+            {
+              "name": "bannerBlueSeat",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": -0.3700000047683716,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-plyr-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "tvplayer2",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 1.090000033378601,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "fresnelAmount": 1.0,
+                "fresnelFocus": 0.009999999776482582,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/tvplayer2-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "tvplayer2",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 1.090000033378601,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "fresnelAmount": 1.0,
+                "fresnelFocus": 0.009999999776482582,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/tvplayer2-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": true,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "bannerMetal",
+          "position": [
+            -0.1342221051454544,
+            -0.1605188101530075,
+            -8.676783561706543
+          ],
+          "quaternion": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/banner-metal.obj",
+          "materials": [
+            {
+              "name": "bannerMetalBack",
+              "shader": "sm/unlit",
+              "floats": {
+                "amount": 0.20999999344348907,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 0.5099999904632568,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-metal-back-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "bannerMetal",
+              "shader": "sm/metal",
+              "floats": {
+                "amount": 1.2000000476837158,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "fresnelAmount": 0.18000000715255737,
+                "fresnelFocus": 0.009999999776482582,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 0.8199999928474426,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-metal-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "metal"
+            }
+          ],
+          "floorSurface": false
+        }
+      ]
+    },
+    {
+      "name": "trophyGroup",
+      "position": [
+        -5.102482318878174,
+        0.5225117802619934,
+        -0.0
+      ],
+      "quaternion": [
+        1.1920927533992653e-07,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "trophySnooker",
+          "position": [
+            -0.2387542724609375,
+            0.5164645314216614,
+            1.1082667112350464
+          ],
+          "quaternion": [
+            -0.70710688829422,
+            0.0,
+            0.0,
+            0.7071067690849304
+          ],
+          "scale": [
+            0.9904176592826843,
+            0.9904176592826843,
+            0.9904176592826843
+          ],
+          "children": [],
+          "mesh": "models/environment/trophy-snooker-variant-2.obj",
+          "materials": [
+            {
+              "name": "trophySnookerBase",
+              "shader": "sm/ball",
+              "floats": {
+                "ambientHeight": 1.6200000047683716,
+                "ambientLightness": 0.47999998927116394,
+                "ambientLow": 0.6299999952316284,
+                "amount": 1.559999942779541,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "diffuseAmount": 1.0,
+                "dstBlend": 0.0,
+                "glossiness": 0.5,
+                "mainAmount": 0.15000000596046448,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/trophy-snooker-base-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            },
+            {
+              "name": "trophySnooker",
+              "shader": "sm/ball",
+              "floats": {
+                "ambientHeight": 0.8399999737739563,
+                "ambientLightness": 0.3700000047683716,
+                "ambientLow": 0.1899999976158142,
+                "amount": 1.7799999713897705,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "diffuseAmount": 1.0,
+                "dstBlend": 0.0,
+                "glossiness": 0.5,
+                "mainAmount": 0.7099999785423279,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/trophy-snooker-base-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "trophyStand",
+          "position": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "quaternion": [
+            -3.7748932868453267e-08,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/trophy-stand.obj",
+          "materials": [
+            {
+              "name": "bannerBluePlyr",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.15000000596046448,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "gloss": 0.07999999821186066,
+                "glossiness": 0.5,
+                "mainAmount": 1.0,
+                "metallic": 0.0,
+                "mipLevel": 1.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "specular": 0.6600000262260437,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 0.14000000059604645,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/banner-blue-plyr-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "trophyShadow",
+          "position": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "quaternion": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/trophy-shadow.obj",
+          "materials": [
+            {
+              "name": "trophySnookerShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 1.0,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/trophy-snooker-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        }
+      ]
+    },
+    {
+      "name": "cameraManGroup",
+      "position": [
+        4.351374626159668,
+        0.8306824564933777,
+        4.859373092651367
+      ],
+      "quaternion": [
+        -0.5362938642501831,
+        0.46085667610168457,
+        0.46085667610168457,
+        0.5362938642501831
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "cameraGuy",
+          "position": [
+            0.0771649181842804,
+            0.09414397925138474,
+            0.002403869526460767
+          ],
+          "quaternion": [
+            -0.0021596383303403854,
+            -0.007418293040245771,
+            0.9325857758522034,
+            -0.36086568236351013
+          ],
+          "scale": [
+            12.000558853149414,
+            12.000556945800781,
+            12.000560760498047
+          ],
+          "children": [],
+          "mesh": "models/environment/camera-guy.obj",
+          "materials": [
+            {
+              "name": "cameraGuyShiny",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.05999999865889549,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "diffuseAmount": 0.3700000047683716,
+                "dstBlend": 0.0,
+                "fresnelAmount": 1.0,
+                "fresnelFocus": 0.019999999552965164,
+                "gloss": 0.5400000214576721,
+                "glossiness": 0.5,
+                "mainAmount": 0.3700000047683716,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "reflAmount": 1.0,
+                "specular": 0.20999999344348907,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 1.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/camera-guy-shiny-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "cameraGuyShadow",
+          "position": [
+            -0.0,
+            0.0,
+            -0.8266361951828003
+          ],
+          "quaternion": [
+            0.7071068286895752,
+            0.0,
+            -0.0,
+            0.7071067094802856
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/camera-guy-shadow.obj",
+          "materials": [
+            {
+              "name": "cameraGuyShinyShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 1.0,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/camera-guy-shiny-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": false
+        },
+        {
+          "name": "cameraShiny",
+          "position": [
+            0.5447778105735779,
+            0.6705660820007324,
+            -0.0049366760067641735
+          ],
+          "quaternion": [
+            -0.0021596387960016727,
+            -0.007418294437229633,
+            0.9325857758522034,
+            -0.3608657121658325
+          ],
+          "scale": [
+            12.000560760498047,
+            12.000555992126465,
+            12.00056266784668
+          ],
+          "children": [],
+          "mesh": "models/environment/camera-shiny.obj",
+          "materials": [
+            {
+              "name": "cameraShiny",
+              "shader": "sm/wood",
+              "floats": {
+                "amount": 0.6100000143051147,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "diffuseAmount": 0.3700000047683716,
+                "dstBlend": 0.0,
+                "fresnelAmount": 0.9399999976158142,
+                "fresnelFocus": 0.11999999731779099,
+                "gloss": 0.5400000214576721,
+                "glossiness": 0.5,
+                "mainAmount": 0.4000000059604645,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "reflAmount": 1.0,
+                "specular": 0.20999999344348907,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlitAmount": 1.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/camera-guy-shiny-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": false,
+                "decal": false,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": false,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "wood"
+            }
+          ],
+          "floorSurface": false
+        }
+      ]
+    },
+    {
+      "name": "mrSkyPortal010",
+      "position": [
+        0.014363250695168972,
+        21.585285186767578,
+        1.1533079147338867
+      ],
+      "quaternion": [
+        -0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "scale": [
+        226.4598388671875,
+        30.86077880859375,
+        30.86077880859375
+      ],
+      "children": []
+    },
+    {
+      "name": "tableGroup",
+      "position": [
+        -0.9108546376228333,
+        0.8238086700439453,
+        0.18565289676189423
+      ],
+      "quaternion": [
+        -0.7071068286895752,
+        0.0,
+        0.0,
+        0.7071068286895752
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "children": [
+        {
+          "name": "floorTableLight",
+          "position": [
+            0.8229430317878723,
+            -1.0219526290893555,
+            -0.7427178621292114
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-table-light.obj",
+          "materials": [
+            {
+              "name": "floorBakedLight",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.6899999976158142,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "gloss": 0.078125,
+                "glossiness": 0.5,
+                "invFade": 0.699999988079071,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "shininess": 0.078125,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "unlit": 1.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-baked-light-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        },
+        {
+          "name": "floorTableShadow",
+          "position": [
+            0.8229430317878723,
+            -1.021952509880066,
+            -0.8127181529998779
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-table-shadow.obj",
+          "materials": [
+            {
+              "name": "floorTableShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 1.0,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-table-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        },
+        {
+          "name": "floorLegsShadow",
+          "position": [
+            0.8229430317878723,
+            -1.021952509880066,
+            -0.802717924118042
+          ],
+          "quaternion": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1.0
+          ],
+          "scale": [
+            1.1617478132247925,
+            1.1617484092712402,
+            1.0
+          ],
+          "children": [],
+          "mesh": "models/environment/floor-legs-shadow.obj",
+          "materials": [
+            {
+              "name": "floorLegShadow",
+              "shader": "sm/transparent",
+              "floats": {
+                "alpha": 0.36000001430511475,
+                "amount": 0.24400000274181366,
+                "bumpScale": 1.0,
+                "cutoff": 0.5,
+                "detailNormalMapScale": 1.0,
+                "dstBlend": 0.0,
+                "emission": 0.5,
+                "glossiness": 0.5,
+                "metallic": 0.0,
+                "mode": 0.0,
+                "occlusionStrength": 1.0,
+                "parallax": 0.019999999552965164,
+                "power": 0.5,
+                "rimPower": 3.0,
+                "specular": 50.0,
+                "specularAmount": 0.5,
+                "srcBlend": 1.0,
+                "uvsec": 0.0,
+                "zwrite": 1.0
+              },
+              "texture": "textures/scene/floor-leg-shadow-color.png",
+              "repeat": [
+                1.0,
+                1.0
+              ],
+              "offset": [
+                0.0,
+                0.0
+              ],
+              "render": {
+                "surface": null,
+                "groundOverlay": true,
+                "decal": true,
+                "net": false,
+                "cloth": false,
+                "gold": false,
+                "environmentAlpha": true,
+                "unlit": false,
+                "castShadow": true
+              },
+              "shadingModel": "basic"
+            }
+          ],
+          "floorSurface": true
+        }
+      ]
+    }
+  ]
+}

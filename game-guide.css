@@ -1,0 +1,26 @@
+#game-guide{position:fixed;inset:0;width:min(1200px,calc(100vw - 24px),calc((100dvh - 88px) * 2.17));max-width:none;max-height:calc(100dvh - 24px);margin:auto;padding:0;border:1px solid #4b929c66;border-radius:16px;background:#031925;color:#fff;box-shadow:0 20px 80px #000b;font-family:system-ui,-apple-system,'PingFang SC',sans-serif;box-sizing:border-box;overflow:hidden}
+#game-guide[open]{display:flex;flex-direction:column}
+#game-guide::backdrop{background:#000c;backdrop-filter:blur(5px)}
+#game-guide .guide-content{overflow:auto;min-height:0;overscroll-behavior:contain;touch-action:pan-y}
+#game-guide h2,#game-guide .guide-transcript{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}
+#game-guide .guide-art{aspect-ratio:1672/770;overflow:hidden}
+#game-guide .guide-art img{display:block;width:100%;height:auto;max-width:none}
+#game-guide .guide-portrait{display:none}
+#game-guide .guide-footer{flex:none;padding:12px 16px 16px;display:flex;justify-content:center;background:#031925}
+#game-guide .guide-dismiss{appearance:none;min-height:46px;width:min(360px,100%);padding:10px 24px;border:1px solid #00f2a1;border-radius:999px;background:linear-gradient(#00be77,#006842);box-shadow:inset 0 1px 8px #32f7ae77,0 3px 15px #00c97733;color:white;font:700 clamp(16px,2vw,22px)/1.4 system-ui,-apple-system,'PingFang SC',sans-serif;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:transform 100ms ease,filter 100ms ease,box-shadow 100ms ease}
+#game-guide .guide-dismiss span{margin-left:12px;font-size:1.3em;line-height:1}
+#game-guide .guide-dismiss:active,#game-guide .guide-dismiss[data-product-press="inside"]{transform:scale(.97);filter:brightness(.75);box-shadow:inset 0 2px 9px #002d27aa}
+#game-guide .guide-dismiss:focus-visible{outline:3px solid white;outline-offset:3px}
+#game-guide.guide-image-failed .guide-art,#game-guide.guide-image-failed .guide-portrait{display:none}
+#game-guide.guide-image-failed h2,#game-guide.guide-image-failed .guide-transcript{position:static;width:auto;height:auto;clip-path:none;margin:20px;line-height:1.8}
+@media(orientation:portrait){
+ #game-guide{width:calc(100vw - 24px);max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+ #game-guide h2{position:static;width:auto;height:auto;clip-path:none;margin:20px 12px;font-size:clamp(19px,5.8vw,30px);text-align:center}
+ #game-guide .guide-art{display:none}
+ #game-guide .guide-portrait{display:grid;gap:14px;padding:0 10px 6px}
+ #game-guide .guide-card{aspect-ratio:516/540;background-image:var(--guide-art);background-size:324.031% auto;background-repeat:no-repeat;border-radius:12px}
+ #game-guide .guide-card-0{background-position:4.325% 53.865%}
+ #game-guide .guide-card-1{background-position:50.173% 53.865%}
+ #game-guide .guide-card-2{background-position:96.021% 53.865%}
+}
+@media(prefers-reduced-motion:reduce){#game-guide .guide-dismiss{transition:none}}

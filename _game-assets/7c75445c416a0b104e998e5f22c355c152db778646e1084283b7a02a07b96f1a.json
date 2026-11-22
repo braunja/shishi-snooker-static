@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "capturedAt": "2026-11-16T16:10:25.327Z",
+  "selection": {
+    "table": "v2",
+    "venue": "crucible-2026",
+    "lighting": "r135",
+    "effectiveLighting": "r135"
+  },
+  "position": [
+    -0.00006377696990966797,
+    0.8511788372929436,
+    -0.00028893109626848545
+  ],
+  "surfaceY": 0.8249288372929436,
+  "radius": 0.02625,
+  "resolution": 512,
+  "near": 0.001,
+  "far": 500,
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)",
+  "colorSpace": "actual default framebuffer bytes; same display path as 8892; no sRGB render-target re-encoding",
+  "orientation": "Three CubeCamera WebGL; PNG rows preserve GL texture rows; CubeTextureLoader flipY=false",
+  "faceInfo": {
+    "px": {
+      "direction": [
+        1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": -90
+    },
+    "nx": {
+      "direction": [
+        -1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": -90
+    },
+    "ny": {
+      "direction": [
+        0,
+        -1,
+        -2.220446049250313e-16
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "fov": -90
+    },
+    "pz": {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": -90
+    },
+    "nz": {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "fov": -90
+    }
+  },
+  "excluded": "balls, ball shadows, cue, gameplay overlays and blue spot marker; only table, venue and ambient",
+  "hiddenSpots": [
+    "点位_·_blue"
+  ],
+  "projection": "world-direction cubemap; no legacy reflection box",
+  "top": "not captured; independent metric lamp plane remains authoritative",
+  "files": {
+    "px": {
+      "file": "px-point-lights.png",
+      "bytes": 265014,
+      "sha256": "d9bdab2e428c7e6f86de1635170c4cd607335013d0b0eacd733557f7ce6d6af3",
+      "originalCapture": {
+        "file": "px.png",
+        "bytes": 306940,
+        "sha256": "efb1712dc2ee36a5b1ac6be793b3c9f09359c06ed7ed056089029e493f59b22e"
+      }
+    },
+    "nx": {
+      "file": "nx-point-lights.png",
+      "bytes": 232809,
+      "sha256": "8b7efb77ba5e5373990a8e978bf8c27e34ca29575fb5df794f00b6fb7066163f",
+      "originalCapture": {
+        "file": "nx.png",
+        "bytes": 269113,
+        "sha256": "3c65b4a692138b32b0ef84dddcfbf35dc04d5edd9af64a93d522f90fbf5ede36"
+      }
+    },
+    "ny": {
+      "file": "ny.png",
+      "bytes": 480404,
+      "sha256": "0e9371b01dce158c2d869db8e493f060a90fd70a528d2032a34aeaa1acf15d70"
+    },
+    "pz": {
+      "file": "pz-point-lights.png",
+      "bytes": 248924,
+      "sha256": "0c63c3c2ea60c2a9e981c54f820c6fc4438ce70f51f0f57717c74e03b4ee94ea",
+      "originalCapture": {
+        "file": "pz.png",
+        "bytes": 295414,
+        "sha256": "191751104c5a580d8ee2239f5b5b003f05f151578febb4d268cd11756e893761"
+      }
+    },
+    "nz": {
+      "file": "nz-point-lights.png",
+      "bytes": 246598,
+      "sha256": "a91585cb2bb9c66784ffb4fb5df6c755972d7e6a958388f01947e5275e1e7067",
+      "originalCapture": {
+        "file": "nz.png",
+        "bytes": 290147,
+        "sha256": "b7bf4267c34d33b39055a2ec0610bebd6f1cf8c5e6b606df8c12417410bd5026"
+      }
+    }
+  },
+  "sourceHashes": {
+    "preview.js": "9e815869c892036269499b96d862d8e3cb8c0bca8e476f940bcd2845d9beeb73",
+    "lighting-tuning.js": "cd85da2f34fd166b07968d424104f7da6a8446fcee8915ac7761037af19c5e78",
+    "test-field-carpet.js": "58e571ef0ff838b14d261acb101cb80c13b98c3d81eecad11938ffa62e7f3568"
+  },
+  "sideFaceEdit": "Four side faces add point-light highlights to their original captures. Highlights are scaled 2x about their original centers."
+}

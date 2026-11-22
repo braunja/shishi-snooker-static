@@ -1,0 +1,258 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #07100e;
+  color: #eef7f0;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body,
+#viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(30, 78, 56, .32), transparent 45%),
+    #07100e;
+}
+
+#viewer {
+  position: relative;
+  isolation: isolate;
+}
+
+#viewer::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  content: "";
+  background: radial-gradient(circle, transparent 44%, rgba(0, 5, 4, .42) 100%);
+}
+
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+
+.masthead {
+  position: absolute;
+  z-index: 4;
+  top: max(28px, env(safe-area-inset-top));
+  left: max(32px, env(safe-area-inset-left));
+  right: max(32px, env(safe-area-inset-right));
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.eyebrow,
+.spec-card__label {
+  margin: 0 0 8px;
+  color: #b99b5f;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .22em;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 3vw, 42px);
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+.subtitle {
+  margin: 7px 0 0;
+  color: rgba(232, 241, 234, .56);
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 4px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 999px;
+  background: rgba(8, 19, 16, .62);
+  color: rgba(235, 245, 237, .72);
+  font-size: 11px;
+  backdrop-filter: blur(14px);
+}
+
+.status__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d5b771;
+  box-shadow: 0 0 12px #d5b771;
+}
+
+.status.is-ready .status__dot { background: #6fe59a; box-shadow: 0 0 12px #6fe59a; }
+.status.is-error .status__dot { background: #ef766f; box-shadow: 0 0 12px #ef766f; }
+
+.spec-card {
+  position: absolute;
+  z-index: 4;
+  left: max(32px, env(safe-area-inset-left));
+  bottom: max(34px, env(safe-area-inset-bottom));
+  width: min(260px, calc(100vw - 64px));
+  padding: 17px 18px 13px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 14px;
+  background: rgba(8, 18, 15, .58);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .18);
+  pointer-events: none;
+  backdrop-filter: blur(16px);
+}
+
+.spec-card dl { margin: 0; }
+.spec-card dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255, 255, 255, .055);
+  font-size: 11px;
+}
+.spec-card dt { color: rgba(232, 241, 234, .42); }
+.spec-card dd { margin: 0; color: rgba(244, 249, 245, .82); }
+
+.toolbar {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: max(34px, env(safe-area-inset-bottom));
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 13px;
+  background: rgba(8, 18, 15, .72);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, .25);
+  transform: translateX(-50%);
+  backdrop-filter: blur(18px);
+}
+
+.toolbar button {
+  min-width: 54px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: rgba(234, 242, 235, .62);
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease;
+}
+
+.shadow-toggle { display: flex; align-items: center; gap: 5px; flex: 0 0 auto; font-size: 11px; white-space: nowrap; padding: 0 8px; }
+.shadow-toggle input { accent-color: #d1b36c; }
+@media (min-width: 801px) and (max-width: 1400px) {
+  .spec-card, .hint { display: none; }
+}
+
+.toolbar button:hover,
+.toolbar button:focus-visible {
+  background: rgba(255, 255, 255, .07);
+  color: #fff;
+  outline: none;
+}
+
+.toolbar button.is-active,
+.toolbar button[aria-pressed="true"] {
+  background: #d1b36c;
+  color: #122018;
+}
+
+.toolbar__divider {
+  width: 1px;
+  height: 22px;
+  margin: 0 3px;
+  background: rgba(255, 255, 255, .1);
+}
+
+.hint {
+  position: absolute;
+  z-index: 4;
+  right: max(32px, env(safe-area-inset-right));
+  bottom: max(41px, calc(env(safe-area-inset-bottom) + 7px));
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(232, 241, 234, .38);
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.hint i {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.loading {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: 18%;
+  width: min(250px, 45vw);
+  transform: translateX(-50%);
+  transition: opacity .35s ease;
+}
+
+.loading.is-hidden { opacity: 0; }
+.loading__track { height: 2px; overflow: hidden; background: rgba(255, 255, 255, .1); }
+.loading__track span {
+  display: block;
+  width: 6%;
+  height: 100%;
+  background: #d1b36c;
+  box-shadow: 0 0 10px rgba(209, 179, 108, .8);
+  transition: width .2s ease;
+}
+
+@media (max-width: 800px) {
+  .masthead { top: 18px; left: 18px; right: 18px; }
+  .status { display: none; }
+  .spec-card { display: none; }
+  .hint { display: none; }
+  .toolbar {
+    bottom: max(16px, env(safe-area-inset-bottom));
+    width: calc(100vw - 24px);
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .toolbar button { flex: 0 0 auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toolbar button,
+  .loading { transition: none; }
+}
+
+/* Keep layout measurable for camera fitting while hiding all startup UI. */
+#viewer.is-loading > :not(#loading) { visibility: hidden !important; pointer-events: none !important; }
+#viewer.is-loading::after { display: none; }
+#loading.loading { position: fixed; inset: 0; z-index: 100; width: 100%; height: 100%; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; background: #07100e; opacity: 1; transition: none; }
+#loading h1 { margin: 0; color: #eef7f0; font: 500 clamp(24px, 4vw, 34px)/1.3 system-ui, sans-serif; letter-spacing: .06em; }
+#loading .loading__track { width: min(300px, calc(100vw - 80px)); height: 4px; border-radius: 4px; overflow: hidden; background: #263c30; }
+#loading-bar { display: block; width: 0; height: 100%; background: #b8cebc; transition: width .15s linear; }
+
+body:has(#viewer.is-loading) > :not(#viewer) { visibility: hidden !important; }

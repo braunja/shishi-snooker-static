@@ -1,0 +1,7 @@
+html[data-product=trial] .game-hud{display:block!important;position:fixed;z-index:100001;top:calc(env(safe-area-inset-top,0px) + 12px);bottom:auto;left:50%;transform:translateX(-50%);width:min(92vw,620px);background:none;border:0;box-shadow:none;pointer-events:none}
+html[data-product=trial] .game-hud .match-score,html[data-product=trial] .game-hud .match-status{display:none}
+html[data-product=trial] .game-hud .rule-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:0;pointer-events:auto}
+html[data-product=trial] .game-hud .rule-actions:empty{display:none}
+html[data-product=trial] .game-hud .rule-actions button{min-width:44px;min-height:42px;border:1px solid #d4a953;border-radius:10px;background:#102a1dea;color:#f6ecd3;box-shadow:0 6px 20px #0008;font-size:14px}
+html[data-product=trial] .game-hud .rule-actions .ball-swatch{min-width:38px;width:38px;min-height:38px;height:38px;border:2px solid #f6e4ae}
+.battle-observer .game-hud .rule-actions{display:none!important}

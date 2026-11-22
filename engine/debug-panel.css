@@ -1,0 +1,59 @@
+.debug-dock { display: none; }
+/* Keep the test-field debug controls above the observation joystick (24). */
+.is-playing .debug-dock { display: block; position: fixed; top: max(12px, env(safe-area-inset-top)); right: 0; z-index: 30; color: #edf2eb; font: 13px system-ui, sans-serif; }
+.debug-rail { width: 52px; min-height: 210px; display: flex; flex-direction: column; gap: 6px; padding: 10px 5px; background: #101b18f5; border: 1px solid #41594c; border-right: 0; border-radius: 10px 0 0 10px; box-sizing: border-box; }
+.debug-rail-label { text-align: center; color: #95aa9e; font-size: 10px; letter-spacing: 2px; padding: 5px 0; }
+.debug-dock button { background: #25382e; border: 1px solid #526b5b; color: inherit; padding: 8px; border-radius: 5px; cursor: pointer; font: inherit; }
+.debug-rail button { min-height: 60px; padding: 6px; writing-mode: vertical-rl; letter-spacing: 4px; }
+.debug-dock button:hover, .debug-rail button.is-active { background: #425a46; border-color: #dfc178; }
+.debug-dock :focus-visible { outline: 2px solid #e6c069; outline-offset: 2px; }
+.debug-content { position: absolute; right: 60px; top: 0; width: min(370px, calc(100vw - 76px)); max-height: calc(100dvh - 24px - env(safe-area-inset-top)); overflow: auto; overscroll-behavior: contain; background: #111c18fa; border: 1px solid #41594c; border-radius: 10px; box-shadow: 0 12px 40px #0008; }
+.debug-dock [hidden] { display: none; }
+.debug-content header { display: flex; justify-content: space-between; align-items: center; padding: 14px; position: sticky; top: 0; background: #17251f; z-index: 1; }
+.debug-content h2 { margin: 0 0 3px; font-size: 17px; }
+#debug-version, .debug-note, #debug-status { font-size: 11px; color: #a6bcad; }
+.debug-note, #debug-status { padding: 0 14px; line-height: 1.6; }
+.debug-fields { border: 0; padding: 0 14px; margin: 0; min-width: 0; }
+.debug-fields:disabled { opacity: .5; }
+.debug-presets { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.debug-presets label, .debug-presets select, #debug-name { grid-column: 1 / -1; }
+.debug-dock input:not([type=range]):not([type=checkbox]), .debug-dock select { box-sizing: border-box; background: #0b1510; color: #edf2eb; border: 1px solid #4a6252; border-radius: 4px; padding: 7px; min-width: 0; width: 100%; font: inherit; }
+.debug-dock .param-group { margin-bottom: 18px; }
+.debug-dock .param-group-title { color: #e6c069; border-bottom: 1px solid #3b5143; padding: 8px 0; font-weight: 600; }
+.debug-dock .param-row { display: grid; grid-template-columns: minmax(0, 1fr) 78px; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #26382d; }
+.debug-dock .param-label-title { display: flex; align-items: baseline; gap: 5px; line-height: 1.5; }
+.debug-dock .param-help { color: #9dbba6; cursor: help; }
+.debug-dock .param-help:hover::after, .debug-dock .param-help:focus::after { content: attr(data-tooltip); display: block; position: absolute; left: 12px; right: 12px; background: #293e31; padding: 10px; border: 1px solid #688572; z-index: 3; white-space: pre-wrap; font-size: 11px; }
+.debug-dock input[type=range] { width: 100%; accent-color: #dfc178; }
+.debug-dock input[type=checkbox] { accent-color: #dfc178; }
+@media (max-width: 600px) { .debug-content { right: 54px; width: calc(100vw - 64px); } .debug-rail { width: 48px; } .debug-dock .param-row { grid-template-columns: minmax(0, 1fr) 65px; } }
+
+.debug-dock input[type=color] { height:34px; min-width:64px; padding:3px; }
+
+#debug-difficulty-row:not([hidden]) { display: block; margin: 0 0 14px; color: #e6c069; }
+#debug-difficulty { margin-top: 6px; }
+
+.sound-pack-controls { display:grid; gap:12px; padding:4px 0 14px; }
+.sound-pack-controls label { display:grid; gap:8px; }
+.sound-pack-note { margin:0; font-size:12px; line-height:1.65; color:#a6bcad; }
+.sound-clip-list { display:grid; gap:7px; }
+.sound-clip-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid #304338; }
+.sound-clip-row span { overflow-wrap:anywhere; min-width:0; }
+.sound-clip-row button { flex-shrink:0; }
+.debug-rail { max-height:calc(100dvh - 24px); overflow-y:auto; }
+
+.quality-controls { display:grid; gap:12px; padding:4px 0 14px; }
+.quality-controls label { display:grid; grid-template-columns:minmax(0,1fr) 150px; align-items:center; gap:10px; }
+.quality-controls pre { white-space:pre-wrap; font:12px/1.7 system-ui; margin:0; padding:10px; background:#0b1510; border-radius:4px; }
+
+.quality-gpu-live { padding:6px 10px; color:#d8ecd9; background:#101b18ed; border:1px solid #41594c; border-radius:5px; font:12px/1.5 system-ui; pointer-events:none; }
+
+/* Test field only: scoreboard stays out of view; rule decisions remain usable. */
+html:not([data-product="trial"]) .match-score[hidden], html:not([data-product="trial"]) .match-status[hidden] { display:none; }
+#test-frame-rates { position:fixed; top:max(12px,env(safe-area-inset-top)); right:max(64px,env(safe-area-inset-right)); z-index:31; display:grid; gap:4px; max-width:calc(100vw - 80px); padding:9px 12px; background:#101b18ed; border:1px solid #41594c; border-radius:6px; pointer-events:none; font:12px/1.5 system-ui; font-variant-numeric:tabular-nums; }
+#test-frame-rates #fps { color:#edf2eb; font-size:12px; }
+#test-frame-rates .quality-gpu-live { padding:0; border:0; background:none; }
+html:not([data-product="trial"]) .debug-content { top:82px; max-height:calc(100dvh - 110px); }
+
+.debug-dock .param-row.is-unavailable { opacity: .45; }
+.debug-dock .param-row.is-unavailable input, .debug-dock .param-row.is-unavailable select { cursor: not-allowed; }

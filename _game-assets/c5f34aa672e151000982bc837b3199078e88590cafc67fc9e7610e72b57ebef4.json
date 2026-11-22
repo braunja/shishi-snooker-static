@@ -1,0 +1,347 @@
+{
+  "renderSettings": {
+    "fog": false,
+    "fogColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5,
+      "a": 1.0
+    },
+    "fogMode": 3,
+    "fogDensity": 0.009999999776482582,
+    "linearFogStart": 0.0,
+    "linearFogEnd": 300.0,
+    "ambientSkyColor": {
+      "r": 0.4852941036224365,
+      "g": 0.4852941036224365,
+      "b": 0.4852941036224365,
+      "a": 1.0
+    },
+    "ambientEquatorColor": {
+      "r": 0.11400000005960464,
+      "g": 0.125,
+      "b": 0.13300000131130219,
+      "a": 1.0
+    },
+    "ambientGroundColor": {
+      "r": 0.04699999839067459,
+      "g": 0.0430000014603138,
+      "b": 0.03500000014901161,
+      "a": 1.0
+    },
+    "ambientIntensity": 1.0,
+    "ambientMode": 3,
+    "subtractiveShadowColor": {
+      "r": 0.41999998688697815,
+      "g": 0.4779999852180481,
+      "b": 0.6269999742507935,
+      "a": 1.0
+    },
+    "skyboxMaterial": {},
+    "haloStrength": 0.5,
+    "flareStrength": 1.0,
+    "flareFadeSpeed": 3.0,
+    "haloTexture": {},
+    "spotCookie": {},
+    "defaultReflectionMode": 0,
+    "defaultReflectionResolution": 128,
+    "reflectionBounces": 1,
+    "reflectionIntensity": 1.0,
+    "customReflection": {},
+    "ambientProbe": {
+      "sh[ 0]": 0.0,
+      "sh[ 1]": 0.0,
+      "sh[ 2]": 0.0,
+      "sh[ 3]": 0.0,
+      "sh[ 4]": 0.0,
+      "sh[ 5]": 0.0,
+      "sh[ 6]": 0.0,
+      "sh[ 7]": 0.0,
+      "sh[ 8]": 0.0,
+      "sh[ 9]": 0.0,
+      "sh[10]": 0.0,
+      "sh[11]": 0.0,
+      "sh[12]": 0.0,
+      "sh[13]": 0.0,
+      "sh[14]": 0.0,
+      "sh[15]": 0.0,
+      "sh[16]": 0.0,
+      "sh[17]": 0.0,
+      "sh[18]": 0.0,
+      "sh[19]": 0.0,
+      "sh[20]": 0.0,
+      "sh[21]": 0.0,
+      "sh[22]": 0.0,
+      "sh[23]": 0.0,
+      "sh[24]": 0.0,
+      "sh[25]": 0.0,
+      "sh[26]": 0.0
+    },
+    "generatedSkyboxReflection": {},
+    "sun": {},
+    "indirectSpecularColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    }
+  },
+  "lights": [
+    {
+      "data": {
+        "gameObject": {},
+        "enabled": 1,
+        "type": 1,
+        "color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "intensity": 1.0,
+        "range": 10.0,
+        "spotAngle": 30.0,
+        "cookieSize": 10.0,
+        "shadows": {
+          "type": 0,
+          "resolution": -1,
+          "customResolution": -1,
+          "strength": 1.0,
+          "bias": 0.05000000074505806,
+          "normalBias": 0.4000000059604645,
+          "nearPlane": 0.20000000298023224
+        },
+        "cookie": {},
+        "drawHalo": false,
+        "bakingOutput": {
+          "probeOcclusionLightIndex": -1,
+          "occlusionMaskChannel": -1,
+          "lightmapBakeMode": {
+            "lightmapBakeType": 4,
+            "mixedLightingMode": 2
+          },
+          "isBaked": false
+        },
+        "flare": {},
+        "renderMode": 0,
+        "cullingMask": {
+          "bits": 4294967295
+        },
+        "lightmapping": 4,
+        "areaSize": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "bounceIntensity": 1.0,
+        "colorTemperature": 6570.0,
+        "useColorTemperature": false
+      },
+      "ancestry": [
+        {
+          "name": "directionalLight",
+          "active": true
+        },
+        {
+          "name": "poolCuePurchaseDialog",
+          "active": false
+        },
+        {
+          "name": "2DuiScreens",
+          "active": true
+        },
+        {
+          "name": "sceneFolder",
+          "active": true
+        }
+      ],
+      "active": false
+    },
+    {
+      "data": {
+        "gameObject": {},
+        "enabled": 1,
+        "type": 1,
+        "color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "intensity": 1.0,
+        "range": 10.0,
+        "spotAngle": 30.0,
+        "cookieSize": 10.0,
+        "shadows": {
+          "type": 0,
+          "resolution": -1,
+          "customResolution": -1,
+          "strength": 1.0,
+          "bias": 0.05000000074505806,
+          "normalBias": 0.4000000059604645,
+          "nearPlane": 0.20000000298023224
+        },
+        "cookie": {},
+        "drawHalo": false,
+        "bakingOutput": {
+          "probeOcclusionLightIndex": -1,
+          "occlusionMaskChannel": -1,
+          "lightmapBakeMode": {
+            "lightmapBakeType": 4,
+            "mixedLightingMode": 2
+          },
+          "isBaked": false
+        },
+        "flare": {},
+        "renderMode": 0,
+        "cullingMask": {
+          "bits": 4294967295
+        },
+        "lightmapping": 4,
+        "areaSize": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "bounceIntensity": 1.0,
+        "colorTemperature": 6570.0,
+        "useColorTemperature": false
+      },
+      "ancestry": [
+        {
+          "name": "directionalLight",
+          "active": true
+        },
+        {
+          "name": "scrollView",
+          "active": false
+        },
+        {
+          "name": "panel",
+          "active": true
+        },
+        {
+          "name": "poolShopNewInProgress",
+          "active": false
+        },
+        {
+          "name": "2DuiScreens",
+          "active": true
+        },
+        {
+          "name": "sceneFolder",
+          "active": true
+        }
+      ],
+      "active": false
+    }
+  ],
+  "tableAncestors": [
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        0.0,
+        7.9421000480651855,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.159999966621399,
+        1.0,
+        1.159999966621399
+      ]
+    },
+    {
+      "position": [
+        0.0,
+        -0.8180999755859375,
+        -1.1074999570846558
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}
